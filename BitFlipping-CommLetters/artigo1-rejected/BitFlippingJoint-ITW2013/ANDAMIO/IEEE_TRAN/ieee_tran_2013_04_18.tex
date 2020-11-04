@@ -1,0 +1,280 @@
+%\documentclass[peerreview,draftclsnofoot,onecolumn]{IEEEtran}
+\documentclass[journal]{IEEEtran}
+
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{theorem}        %%Lo agregue yo <========================================
+\usepackage{algorithmic}        %%Lo agregue yo <========================================
+
+\setcounter{secnumdepth}{7}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+%\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newenvironment{algorithm}[1][Algorithm]{\textbf{#1.} }{}
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{psfrag}
+
+%\usepackage[none]{hyphenat}
+
+\hyphenation{bet-ween re-pre-sen-ting} %
+\sloppy
+
+\begin{document}
+
+\title{Bit-Flipping Algorithm for Joint Decoding of  Multiple Correlated Sources transmitted over noisy channels.}
+
+\author{Fernando~Pujaico~Rivera and Jaime Portugheis, \textit{Member, IEEE}
+\thanks{Manuscript received XXXX XX, 2010; revised XXXXX XX, 2013.
+Department of Communications, Faculty of Electrical and Computer Engineering.
+State University of Campinas (UNICAMP), Campinas-SP, Brazil.}
+\thanks{E-mails: \{fpujaico,jaime\}@decom.fee.unicamp.br } }
+
+%\markboth{IEEE Communications Letters,~Vol.~X,
+%No.~XX,~XXXXX~XXX}{Shell \MakeLowercase{\textit{et al.}}: Bare
+%Demo of IEEEtran.cls for Journals}
+
+% make the title area
+\maketitle
+%%%%%%%\IEEEpeerreviewmaketitle
+
+\begin{abstract}
+This paper proposes a bit-flipping decoding algorithm suitable for decoding 
+multiple correlated sources in a noisy envinroment. All sources are noisy 
+versions of a single binary source and are transmitted through identical 
+orthogonal binary symmetric channels  (BSCs).  The noisy versions  are obtained 
+by transmitting this single source through independent BSCs. The set of crossover 
+probabilities of these BSCs can be chosen randomly.   By fixing one of these 
+probabilities to a value of approximately one, the decoding can be interpreted 
+as decoding with multiple side information.  Performance of the algorithm was 
+obtained by computer simulation for  systems up to 100 sources.   All sources 
+were encoded independently with short LDGM codes.  For decoding with side 
+information, the algorithm approaches a lower bound on performance.   In 
+conjuction with a fusion decision rule, the algorithm can be applied to a 
+large scale sensor network modeled by the binary CEO problem.
+\end{abstract}
+
+\begin{keywords}
+LDGM codes, hard-decision decoding, BF decoding algorithm.
+\end{keywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}\label{sec:Intro}
+
+
+\section{System Model} \label{sec:SystemModel}
+
+A Figura \ref{fig:modelo} mostra o modelo de codificação  e decodificação
+de fontes conjuntas.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=8.5cm]{fig1.eps}
+\caption{Diagrama de blocos do modelo geral de decodificação.} \label{fig:modelo}
+\end{figure}
+
+As fontes $u_i$ foram geradas usando uma fonte primaria binaria $u_0$ com $p(u_0=1)=0.5$
+e fontes secundarias $e_i$, $i \in \{1, ... , m\}$. Onde $p(e_i=1)=p_i$
+\begin{equation}\label{eq:fontes}
+u_i=u_0 \otimes e_i
+\end{equation}
+
+\section{Bit-Flipping Decoding} \label{sec:BF}
+
+Existem  muitos algoritmos simples para realizar uma decodificação da informação
+que percorre um canal com ruido. Estes algoritmos podem usar uma decisão suave (``soft'') ou abrupta (``hard'').
+Se diz que um algoritmo de decodificação realiza uma decisão suave se utiliza na sua predição
+dados que são números reais, pelo contrario se diz que o algoritmo de decodificação
+realiza uma decisão abrupta quando usa dados inteiros como dados de entrada. 
+
+Aqui se trabalhará sobre algoritmos de decodificação para códigos de verificação de
+paridade de baixa densidade ou também chamado $LDPC$, do inglês ``Low Density Parity
+Check''.
+
+Como pode-se ver na Figura \ref{fig:modelo} se tem $m$ canais ruidosos com 
+vetores $Y_i$ na sua saída, ou com sua contraparte abrupta $Z_i$. Pode-se realizar 
+com estes vetores uma decodificação para obter uma estimado $\hat{U}_i$ de $U_i$,
+baseando-se só na redundância acrescenta por cada codificador fonte-canal de taxa $r$ (a esto 
+se chamará decodificação independente), ou pode-se usar a informação redundante 
+acrescentada pelo conhecimento da informação ruidosa recebida das outras $m-1$
+fontes $u_i$ (esto se chamará decodificação conjunta).
+
+\subsection{Algoritmos de decodificação independente}
+\label{Subsec:AlgDecInd}
+Entre os algoritmos de decodificação independente temos.
+
+
+\subsubsection{Algoritmo Parallel Hard Bit-Flipping}
+\label{Subsubsec:PHBF}
+
+Ela trabalha sobre um vetor de entrada binário $Z$ e tem como regra de
+geração de confiabilidade, ${E_I}_j$,
+\begin{equation}\label{Eq:E_SSBF}
+{E_I}_j=\sum_{l\in \mathcal{M}(j)} (2 s_{l} - 1),
+\end{equation}
+O critério de troca dos bit errados é igual ao algoritmo $BF$. Troca-se todos os bits com um ${E_I}_j \geq \delta$. Para a
+implementação atual usou-se como $\delta$ o maior valor de ${E_I}_j$. O algoritmo
+\ref{alg:PHBitFlipping1} detalha todo o procedimento para a decodificação
+$PHBF$.
+
+\begin{algorithm}[Decodificação Parallel Hard Bit-Flipping]
+\begin{enumerate}
+\item Inicia-se com $i=0$ e o vetor de decisão abrupta ${Z}^{(i)} = (z^{(i)}_1, \cdots, z^{(i)}_j, \cdots, z^{(i)}_n)=$ $Z$.
+\item Calcula-se a síndrome  $S=H^t Z^{(i)}$ (mod 2). Se todos os valores $s_l$ com $l = \{0,\cdots, L-1\}$
+ são zero, então pára a decodificação e se retorna o vetor
+${Z}^{(i)}$.
+\item Para $j=0,\cdots, n-1$,  avalia-se a função de flipping ${E_I}_{j}$ em (\ref{Eq:E_SSBF}).
+\item Identifica-se o conjunto $\{ j^{*} \}$, onde $j^{*}=\arg \max_{j} {E_I}_{j}$.
+\item Troca-se de valor todos os bits $z^{(i)}_j$ onde $j \in \{ j^{*} \}$, e faz-se $Z^{(i+1)}=Z^{(i)}$.
+\item Se o máximo número de iterações não é atingido, faz-se $i=i+1$ e vai-se ao passo 2.
+ Caso contrário, se detêm a decodificação e se retorna $Z$.
+\end{enumerate}
+\label{alg:PHBitFlipping1}
+\end{algorithm}
+
+
+A confiabilidade de cada bit $z_j$ é calculada somando a quantidade de bits de
+verificação de paridade $s_l$ que ligados a $z_j$ indiquem a existência de
+um erro, e diminuindo a quantidade de bits de 
+verificação de paridade $s_l$ que ligados ao bit $z_j$ não indiquem a existência de
+erro. ``\textit{Muito parecido a uma votação, onde são contabilizados os votos em contra  
+e os votos a favor que anulam um voto em contra, ao final o conjunto de bits que tenham mais
+votos em contra serão trocados}''.
+
+
+\subsection{Algoritmos de decodificação conjunta}
+\label{Subsec:AlgDecConj}
+
+O algoritmo de decodificação conjunta aqui apresentado é uma modificação aos algoritmos
+de decodificação independente. Em geral a modificação
+será trocar o uso da confiabilidade independente ${E_I}_j$ do bit $z_j$ por uma confiabilidade total
+${E_T}_j = {E_I}_j+ \beta {E_C}_j$. Onde $\beta$ é um fator de ponderação e 
+${E_C}_j$ é a confiabilidade conjunta  para cada bit $z_j$ do vetor recebido $Z$.
+Esta confiabilidade conjunta será calculada usando os dados dos bits recebidos dos outros
+$m-1$ canais e ponderado em função à correlação como eles. Assim o caso da decodificação
+independente é um caso especifico da decodificação conjunta quanto $\beta = 0 $ .
+
+Para fazer a decodificação conjunta se definirá para cada um dos $m$ canais de informação
+a confiabilidade ${E_T}_j^i$, onde $i$ indica a que canal 
+corresponde a confiabilidade do bit recebido $z_j^i$.
+
+\subsubsection{Algoritmo Distributed Sources Parallel Hard Bit-Flipping}
+\label{Subsubsec:DSPHBF81}
+O algoritmo ``Distributed Sources Parallel Hard Bit-Flipping'' (DS-PHBF) usa como
+confiabilidade
+
+\begin{equation}\label{eq:DSPHBF381}
+{E_T}^i_j={E_I}^i_j+ \lfloor \beta  {E_C}^i_j   \rfloor.
+\end{equation}
+
+Onde $\lfloor b \rfloor$ é o máximo inteiro de $b$, e $\beta$ é um fator de ponderação entre 
+a confiabilidade independente e a confiabilidade conjunta. Para calcular ${E_C}^i_j$ é 
+necessário conhecer
+\begin{equation}\label{eq:DSPHBF181}
+L^i=\sum^m_{a=1|(a\neq i)}1,
+\end{equation}
+dado que
+\begin{equation}\label{eq:DSPHBF281}
+\begin{matrix}
+{E_C}^i_j= & \sum^m_{a=1|(a\neq i,z^i_j\neq z^a_j)}\frac{{E_I}^a_j ~ Corr(i,a)}{L^i} \\ 
+ ~         & -\sum^m_{a=1|(a\neq i,z^i_j= z^a_j)}\frac{{E_I}^a_j~Corr(i,a)}{L^i}
+\end{matrix}
+\end{equation}
+
+
+
+\section{Numerical Results} \label{sec:NumRes}
+
+O desempenho do algoritmo $DS-PHBF$ se vê na Figura \ref{fig:204.55.187.bf.S100.K204.N306.LDGM-TEST}.
+Nesta figura temos $10$ fontes binarias correlacionadas $u_i$  com $i \in \{1, 2, \dots, 10\}$ e $H(u_i)=1.0$ . 
+
+As fontes foram criadas seguindo una distribuição uniforme entre $0.01$ e $0.99$ para os valores $p_i \in \{$ 
+0.01, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.91 $\}$ no modelo de geração de 
+fontes explicado na seção \ref{sec:SystemModel}. As $10$ fontes foram codificadas com um código
+$LDGM$ como um valor de $k=204$ bits de informação e $n=306$ bits codificados. A proteção para os bits de 
+informação dentro do vetor codificado é de $X=5$. Se aplicaram a todas as fontes os algoritmos $PHBF$ e
+$DS-PHBF$. 
+
+Na Figura \ref{fig:fig2} se vê desenhado com ``$*$'' o desempenho dos 
+algoritmos $PHBF$, como é natural a decodificação de todas as fontes tem o mesmo desempenho dado que usam o mesmo algoritmo e
+a mesma matriz de verificação de paridade. O desempenho dos algoritmos $DS-PHBF$ se vê desenhado com ``$-$'',
+como pode-se ver todos os canais tiveram uma apreciável melhora no seu desempenho, nenhum dos canais pioraram  
+seu desempenho. A media do desempenho do algoritmo esta desenhado com ``$\Box$''. O desempenho dos algoritmos
+$DS-PHBF$ em media mostraram ser ligeiramente melhor do desempenho dos algoritmos $PHBF$. Todos os algoritmos
+usaram $IT=15$ iterações como máximo antes de desistir de corrigir os erros. O limite inferior do desempenho
+dos códigos $LDGM$ \cite{art-garciafrias} esta desenhado com ``$O$''. O desempenho num canal não codificado
+esta desenhado com uma linha pontuada ``$-.-$''.
+
+
+
+\begin{figure}[h!bt]
+\centering \includegraphics[width=8.5cm]{{./fig2.eps}}
+\caption{Gráfico do desempenho da decodificação de 100 fontes $u_i$ correlacionadas 
+com $K=204$ e $N=306$ com códigos LDGM $X=5$ e $Y=10$.}
+\label{fig:fig2}
+\end{figure}
+
+
+\section{Conclusions} \label{sec:Conclusions}
+
+
+
+
+
+\begin{thebibliography}{1}
+
+\bibitem{GLDPCC}
+R. G. Gallager, \textit{Low density parity check codes}.  MIT press,
+Cambridge, 1963.
+
+\bibitem{sipser}
+M. Sipser and D. Spielman, ``Expander codes,'' IEEE Trans. Inform.
+Theory, vol. 42, pp. 1710-1722, Nov. 1996.
+
+
+\bibitem{kou}
+Y. Kou, S. Lin and M. Fossorier, ``Low-density parity-check codes
+based on finite geometries: a rediscovery and new results,'' IEEE
+Trans. Inform. Theory, vol. 47, pp. 2711-2736, Nov. 2001.
+
+
+%%\bibitem{pwbf} X. Wu, C. Zhao and X. You, ``Parallel weighted bit flipping decoding,''
+%%IEEE Commun. Lett., vol. 11, pp. 671-673, Aug. 2007.
+
+\bibitem{MATRIZMACKAY}
+D. J. C. MacKay. Encyclopedia of Sparse Graph Codes [Online].
+Available: http://www.inference.phy.cam.ac.uk/mackay/codes/data.html
+
+\bibitem{ASPIDLCWLDGM}
+J. Garcia-Frias and  W. Zhong, ``Approaching Shannon performance by
+iterative decoding of linear codes with low-density generator
+matrix,''  IEEE Commun. Lett., vol. 7, pp. 266-268, June 2003.
+
+
+\end{thebibliography}
+
+\end{document}

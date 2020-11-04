@@ -1,0 +1,553 @@
+%\documentclass[peerreview,draftclsnofoot,onecolumn]{IEEEtran}
+\documentclass[conference]{IEEEtran}
+\usepackage[letterpaper]{geometry}
+
+%\usepackage[brazil]{babel}
+%\usepackage[T1]{fontenc}
+
+\usepackage{theorem}        %%Lo agregue yo <========================================
+\usepackage{algorithmic}        %%Lo agregue yo <========================================
+
+\setcounter{secnumdepth}{7}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+%\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\newenvironment{algorithm}[1][Algorithm]{\textbf{#1.} }{}
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{psfrag}
+
+%\usepackage[none]{hyphenat}
+
+\hyphenation{bet-ween re-pre-sen-ting} %
+\sloppy
+
+\begin{document}
+
+\title{Bit-Flipping Algorithm for Joint Decoding of Correlated Sources over Noisy Channels}
+
+\author{
+  \IEEEauthorblockN{Fernando~Pujaico~Rivera}
+  \IEEEauthorblockA{	Department of Communications \\
+			Faculty of Electrical and Computer Engineering\\
+			State University of Campinas, Brazil\\
+			Email: fpujaico@decom.fee.unicamp.br
+		    }
+  \and
+  \IEEEauthorblockN{Jaime Portugheis}
+  \IEEEauthorblockA{	Division of Telecommunication Technology \\
+			Faculty of Technology \\
+			State University of Campinas, Brazil\\
+  Email: jaime@ft.unicamp.br}
+}
+
+%\markboth{IEEE Communications Letters,~Vol.~X,
+%No.~XX,~XXXXX~XXX}{Shell \MakeLowercase{\textit{et al.}}: Bare
+%Demo of IEEEtran.cls for Journals}
+
+% make the title area
+\maketitle
+%%%%%%%\IEEEpeerreviewmaketitle
+
+
+\begin{abstract}
+This paper proposes a bit-flipping decoding algo- rithm suitable for decoding 
+multiple correlated sources in a noisy environment.  Correlation models commonly 
+used in the literature are applied to obtain the performance of the proposed 
+algorithm. However, differently from the literature, scenarios with a large 
+number of sources (up to 100) are considered. Additionally, the correlation 
+values of the models are generated randomly. The correlated sources are 
+separately encoded without knowledge of the correlation and are transmitted 
+over orthogonal noisy channels. Short LDGM codes are used for encoding. The 
+correlation of the sources is exploited at the joint decoder to achieve better 
+performance. Although the proposed algorithm do not make any estimation of 
+log-likelihood values, it can be used in conjunction with a fusion rule for 
+solving an instance of the CEO problem.
+\end{abstract}
+
+\begin{keywords}
+Multiple correlated sources, large scale sensor networks, bit-flipping decoding algorithms.
+\end{keywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}\label{sec:Intro}
+
+The efficient transmission of information from separate correlated sources to a remote sink node is a challenging problem \cite{raheli2011}, \cite{raheli2012}. This problem becomes more challenging when the number of sources is very large. This is the case of a large scale wireless sensor network \cite{joao}.
+In this case it is reasonable to assume that the sensor nodes  transmit their observations over orthogonal noisy channels which implies that theoretical limits can be achieved with separation of source and channel coding \cite{joao1}.  One approach to achieve these limits would be to use complex Slepian-Wolf source codes \cite{slepian} which might be impractical for large scale networks \cite{joao}. Another approach is to use only channel coding and exploit the correlation of the sources at the decoder.
+
+In this paper, we adopt this later approach of using only channel coding and  also consider a scenario with a decoder of manageable complexity \cite{joao}.
+In order to cope with this complexity we propose a bit-flipping decoding algorithm suitable for decoding multiple correlated sources. A simple correlation model was adopted to obtain the performance of the proposed algorithm.  The adopted models are similar to those described in \cite{binaryceo},\cite{japao},\cite{raheli2012}. However, we consider scenarios with a large number of sources (up to 100) and also with correlation values of the model generated randomly. Moreover, if one of the correlation values is intentionally selected to be equal to one, the scenario can be considered as an instance of decoding with multiple side information \cite{side}.
+
+The rest of the paper is organized as follows. Section II gives a brief description of the system model.  The proposed algorithm for joint decoding is explained in Section III where we also describe a modified version of Sipser-Spielman bit-flipping decoding\cite{tese}. In Section IV we compare the obtained performance results. Finally, Section V makes some final remarks and conclusions.
+
+
+
+\section{System Model} \label{sec:SystemModel}
+
+ Fig. \ref{fig:modelo} shows the model of the distributed encoding and joint decoding system. 
+Each source
+ generates a binary sequence $\mathbf{u}^{i}=(u_1^{i}, \cdots, u_k^{i}, \cdots, u_{K}^{i}) $, $i=1,2, \ldots,I$, of length $K$.
+ We assume that
+ \begin{equation}\label{eq:fontes}
+u_k^{i}=u_{k}^{0} \oplus e_k^{i}
+\end{equation}
+where $\oplus$ denotes the modulus two summation, the variables $u_{k}^{0}$ are identically distributed, the $e_k^{i}$ are mutually independent binary variables with $P(e_k^{i}=1)=p_i$ and they are independent from $u_{k}^{0}$. The correlation between $u_{k}^{0}$ and $u_{k}^{i}$  is given by $corr(u_{k}^{0},u_{k}^{i})=1-2p_i$ and the correlation between $u_{k}^{i}$ and $u_{k}^{j}$, $\forall i \neq j$, is equal to
+$corr(u_{k}^{i},u_{k}^{j})=(1-2p_{ij})$ with $p_{ij}=p_i+p_j-2 p_i p_j. $
+
+In the following we drop the upper indexes ``i'' for simplicity. Each source is encoded
+according to a LDGM code  of rate $R=K/N$, where $N$ is its block
+length \cite{art-garciafrias}. A codeword at the output of each encoder is mapped into a
+signaling vector $\mathbf{x}=(x_1, \cdots, x_n, \cdots, x_{N}) $,
+$x_n \in \{\pm 1 \}$, and is transmitted on an additive white
+Gaussian noise channel. At the receiver, the input to the decoder is
+given by $\mathbf{y}=(y_1, \cdots, y_n, \cdots, y_{N})$, where
+$y_{n}=x_{n} + v_{n}$, $n=1,\cdots,N$  with $v_{n}$ the additive
+noise with zero mean and variance $\sigma^{2}=(2RE_{b}/N_{0})^{-1}$,
+ $E_b$ the energy per information bit and $N_0$  the one-sided
+noise spectral density. After applying hard-decision on
+$\mathbf{y}$, a vector $\mathbf{z}=(z_1, \cdots, z_n, \cdots, z_N)$
+is obtained.
+
+\begin{figure}[h!bt]
+\centering
+\includegraphics[width=8.5cm]{fig1.eps}
+\caption{System Model.} \label{fig:modelo}
+\end{figure}
+
+
+
+
+
+
+
+\section{Bit-Flipping Decoding} \label{sec:BF}
+
+In this Section we describe two different bit-flipping algorithms for obtaining estimations $\mathbf{\hat{u}}^{i}=(\hat{u}_1^{i}, \cdots, \hat{u}_k^{i}, \cdots, \hat{u}_{K}^{i}) $, $i=1,2, \ldots,I$, of the information transmitted by all sources in Fig. \ref{fig:modelo}. In both algorithms all decoders work in parallel. In the first algorithm none of the decoders receive side information from others. This algorithm will be referred as \textit{independent decoding.} On the other hand, in the second algorithm all decoders receive side information from others. This algorithm will be called \textit{joint decoding}.
+
+
+\subsection{Independent Decoding}
+\label{Subsec:AlgDecInd}
+In the following we also drop the upper indexes ``i'' for simplicity.
+Let $H=[h_{m,n}]$ be the parity-check matrix of a LDGM code.
+The $m$-th syndrome component is given by the check $s_{m}=\sum_{n} h_{m,n} z_{n}$ (mod 2).
+  Denote the set of bits that participates in
+check $m$ and the set of checks in which bit $n$ participates by $\mathcal{N}(m)= \{n | h_{m,n}=1\}$ and
+$\mathcal{M}(n)= \{ m | h_{m,n}=1\}$, respectively.
+
+
+ In BF decoding, the decoder computes flipping
+ function values
+\begin{equation}
+E_{n}=\sum_{m\in \mathcal{M}(n)} s_{m},\label{Eq:En1}
+\end{equation}
+ and flips all bits for
+which $E_{n} \geq \delta $. New syndromes are re-computed and the
+process is repeated until all syndromes equal zero. As in
+\cite{kou}, we set $\delta =  \max_{n} E_{n} $.
+
+Sipser and Spielman proposed hard-decision algorithms based on a simple criterion:
+a bit is flipped if it has  more non-null syndrome values than null ones
+\cite{sipser}. The first algorithm flips the bits sequentially  and the second
+algorithm flips them in parallel.  A possible implementation of the first
+algorithm was given in \cite{sipser}.
+
+They also show that allowing a limited
+amount of negative progress improves the sequential algorithm. In this paper
+we use a modified version of their parallel algorithm allowing any amount of negative
+progress. The flipping function is then given by
+\begin{equation}
+E_{n}=\sum_{m\in \mathcal{M}(n)} (2 s_{m} - 1).\label{Eq:En2}
+\end{equation}
+
+We describe now the modified version: the
+Parallel Hard Bit-Flipping (PHBF) Decoding Algorithm \cite{tese}.\\
+
+\begin{algorithm}[PHBF Algorithm]
+
+\begin{enumerate}
+\item Initialize $k=0$ and $\mathbf{z}^{(k)}$ $=(z^{(k)}_1, \cdots, z^{(k)}_n, \cdots, z^{(k)}_N)=$ $\mathbf{z}$.
+
+\item Compute the syndrome values $s_{m}=\sum_{n} h_{m,n} z^{(k)}_{n}$ (mod 2) for $m=1,\cdots, (N-K)$.
+If all values are zero then stop decoding since $\mathbf{z}^{(k)}$
+is the output codeword.
+
+\item  For $n=1,\cdots, N$ compute the flipping function $E_{n}$ in (\ref{Eq:En2}).
+
+\item Identify the set of bits $\{ n^{*} \}$
+for which $n^{*}=\arg \max_{n} E_{n}$.
+
+\item  Flip  all bits in $\{n^{*} \}$ in parallel. The flipped hard-decision vector is stored in
+$\mathbf{z}^{(k+1)}$.
+
+\item If a maximum number of iterations is not reached, set $k=k+1$ and go to Step 2).
+ Otherwise stop and $\mathbf{z}$ is the output codeword.
+\\
+\end{enumerate}
+\end{algorithm}
+
+
+\subsection{Joint Decoding}
+\label{Subsec:AlgDecConj}
+
+The joint decoding algorithm is obtained by modifying the flipping function of the independent algorithm.
+The new flipping function, ${T}^i_n$, will be the function ${E}^i_n$ given in (\ref{Eq:En2}) combined with a joint flipping function, ${C}^i_n$.
+The joint function depends on the bits received by other decoders and also on correlations between sources. The new function for the $i$-th decoder is then
+\begin{equation}\label{eq:DSPHBF381}
+{T}^i_n={E}^i_n+ \lfloor \beta  {C}^i_n   \rfloor.
+\end{equation}
+where $\lfloor b \rfloor$ is the greatest integer less than or equal to $b$ and ${C}^i_n$ is given by
+
+\begin{equation}\label{eq:DSPHBF281}
+{C}^i_n=  \sum^{I}_{\begin{matrix} a=1\\ a\neq i\\ z^i_n =    z^a_n \end{matrix}} \frac{{E}^a_n ~ corr(i,a)}{I-1}
+         -\sum^{I}_{\begin{matrix} a=1\\ a\neq i\\ z^i_n \neq z^a_n \end{matrix}} \frac{{E}^a_n ~ corr(i,a)}{I-1}
+\end{equation}
+
+The parameter $\beta$ in (\ref{eq:DSPHBF381}) is to be optimized. If $\beta = 0 $ joint decoding becomes independent decoding.
+Note that introducing the rounding operation $\lfloor b \rfloor$ leads to a flipping function that operates only with integers.
+
+
+
+
+\section{Numerical Results} \label{sec:NumRes}
+
+Numerical results were obtained for scenarios with the number of sources $I=3$, $I=10$ and $I=100$.  
+They were obtained for the uncoded case and for the case where the same short LDGM code with parameters 
+$K=204$ and $N=306$ was used for encoding all sources. The maximum number of iterations in all algorithms 
+was selected to be equal to $15$. For scenarios with $I=3$, $I=10$ and $I=100$, the optimal values obtained 
+for parameter $\beta$ were $1.0$, $2.0$ and $3.0$, respectively.
+
+\begin{figure}[h!bt]
+\centering \includegraphics[width=8.5cm]{{./fig4.eps}}
+\caption{Bit error rate for a system with $3$ sources using Independent Decoding ("Independent") 
+and Joint Decoding ("Joint"). The average bit error rate for Joint Decoding ("Average") is also shown.}
+\label{fig:fig4}
+\end{figure}
+
+Figures  \ref{fig:fig4}, \ref{fig:fig2} and \ref{fig:fig3} compares the performance of independent and 
+joint decoding for scenarios with $I=3$,$I=10$ and $I=100$ correlated sources, respectively. 
+The average performance of all decoders is also shown in the Figures. As can be seen in the Figures, 
+for all scenarios, joint decoding performs better than independent decoding for all sources.
+
+For all three scenarios, the set of values for the probabilities $p_i$, $i=1, 2, \ldots, I,$ were 
+generated randomly according to an uniform distribution ranging from $p_i=0.001$ and $p_i=0.999$. 
+For the scenarios with $I=3$ and $I=10$, the lowest value ($p_1=0.001$) was intentionally selected 
+for one of the sources and the others were generated randomly. For $I=3$, $p_2=0.258$ and $p_3=0.142$. Table I shows the set of values for 
+the probabilities $p_i$ for the scenario with $I=10$ explicitly. For the scenario with $I=100$ the 
+smallest generated value was $p_i=0.036181$ and the greatest value was $p_i=0.95469$. It is worth noting 
+that, for all scenarios, the decoder for the source with highest absolute correlation value $corr(u^{0},u^{i})$ has the best performance.
+
+
+\begin{table}[!hbt]
+\label{tab:1}
+\caption{Probabilities $p_i$ for for a model with $10$ sources}
+\begin{center}
+\begin{tabular}{|l | l | l| l| l|}
+\hline
+$p_1$ & $p_2$ & $p_3$ & $p_4$ & $p_5$ \\
+\hline
+0.001 & 0.097 & 0.358 & 0.070 & 0.592\\
+\hline
+\hline
+$p_6$ & $p_7$ & $p_8$ & $p_9$ & $p_{10}$ \\
+\hline
+0.295 & 0.904 & 0.245 & 0.822 & 0.188\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+
+
+
+\begin{figure}[h!bt]
+\centering \includegraphics[width=8.5cm]{{./fig2.eps}}
+\caption{Bit error rate for a system with $10$ sources using Independent Decoding ("Independent") and Joint Decoding ("Joint"). The average bit error rate for Joint Decoding ("Average") is also shown.}
+\label{fig:fig2}
+\end{figure}
+
+
+
+\begin{figure}[h!bt]
+\centering \includegraphics[width=8.5cm]{{./fig3.eps}}
+\caption{Bit error rate for a system with $100$ sources using Independent Decoding ("Independent") and Joint Decoding ("Joint"). The average bit error rate for Joint Decoding ("Average") is also shown.}
+\label{fig:fig3}
+\end{figure}
+
+
+
+\section{Final Remarks and Conclusions} \label{sec:Conclusions}
+
+It was observed in the simulation results that the source with highest absolute value of the correlation $corr(u^{0},u^{i})$ is recovered with the lowest value of BER. By comparing the results in Figures \ref{fig:fig2} and \ref{fig:fig3} for the decoders with best performances, it can be seen that for $E_{b}/N_{0}$ values  higher than $4$ dB the scenario with $10$ sources leads to slightly better results. This can be explained by the fact that the highest absolute value of correlation $corr(u^{0},u^{i})$ in this scenario is equal to $0.998$ whereas for the scenario with $100$ sources is equal to $0.928$.
+
+It is not difficult to show that the higher the absolute value of the correlation $corr(u^{0},u^{i})$, the greatest the mutual information $I(u^{0},u^{i})$. However, in the system model of Section \ref{sec:SystemModel}, source $u_{0}$ plays the role of a common hidden source \cite{raheli2012}.  This implies that in a real situation one cannot estimate the mutual information $I(u^{0},u^{i})$, $i=1, 2, \ldots, I$.
+Let $\textbf{u}_{j\neq i}=(u^{1},\ldots,u^{i-1},u^{i+1},\ldots,u^{I})$ be a vector representing all source variables excluding the $i$-th source. It is reasonable to argue that the source with the highest value of the joint mutual information $I(u^{i}, \textbf{u}_{j\neq i})$ should be recovered with the lowest value of BER. Instead of calculating $I(u^{i}, \textbf{u}_{j\neq i})$ we obtained the sum
+\begin{equation}\label{eq:sum}
+MI(i)=\sum_{\substack{j=1 \\ j\neq i}}^{I} I(u^{i},u^{j})
+\end{equation}
+for many sets of randomly generated correlation values. For all sets, $MI(i)$ indicated the source recovered with the lowest value of BER.
+
+We have also obtained performance results for all three scenarios described in Section IV using different sets of values for the probabilities $p_i$, $i=1, 2, \ldots, I,$.  It was observed that the performance is highly dependent on the choice of these sets for the source model.  However, for the scenarios of Figures 3 and 4, the lowest value of BER is always attained by the sources whose correlation values were intentionally selected to be approximately equal to one. Moreover, by using $10$ sources instead of $3$ the performance becomes better. These scenarios can be considered as an instance of decoding with side information \cite{side}.
+
+If one is interested in estimating the single hidden binary source $u^{0}$, the problem considered in this paper becomes an instance of
+the binary central estimating officer (CEO) problem \cite{binaryceo}.  Although the proposed algorithm do not make any estimation of log-likelihood values it 
+can be used together with a fusion rule to became a candidate for solving this problem.
+
+
+\begin{thebibliography}{1}
+
+\bibitem{raheli2011} A. Abrardo, G. Ferrari, and M. Martal\`o,\emph{On non-cooperative block-faded orthogonal multiple access schemes with correlated sources}, IEEE Trans. Commun., vol. 59, no. 7, pp. 1916 1926, July 2011.
+
+\bibitem{raheli2012}  G. Ferrari, M. Martal\`o, A. Abrardo,  and R. Raheli,\emph{Orthogonal Multiple Access and Information
+Fusion: How Many Observations Are Needed?}, in Proc. Inform. Theory and Applications Workshop (ITA), UCSD, San Diego, CA, USA, February 2012.
+
+
+
+\bibitem{joao} J. Barros and  M. T$\ddot{u}$chler,\emph{ Scalable Decoding on Factor Trees: A Practical Solution for Wireless Sensor Networks},
+IEEE Trans. Commun., vol. 54,
+no. 2, pp. 284-294, Feb. 2006.
+
+\bibitem{joao1} J. Barros and S. D. Servetto,\emph{Network information flow with correlated sources}, IEEE Trans. Inform. Theory, vol. 52,
+no. 1, pp. 155–170, January 2006.
+
+\bibitem{slepian}D. Slepian and J. K.Wolf, \emph{A coding theorem for multiple access channels
+with correlated sources}, Bell Syst. Tech. J., vol. 52, no. 7, pp.
+1037–1076, 1973.
+
+\bibitem{binaryceo} J. Haghighat, H. Behroozi, and D.V. Plant, \emph{Iterative joint decoding for sensor networks with binary CEO model}, IEEE 9th Workshop on
+Signal Processing Advances in Wireless Communications, July 2008,
+Recife, Brazil.
+
+
+\bibitem{japao} K. Kobayashi, T. Yamazato and M. Katayama,\emph{Decoding of Separately Encoded Multiple Correlated Sources Transmitted over Noisy Channels},
+  IEICE Trans. Fundamentals,  vol. E92-A ,  no 10,pp 2402-2410, October 2009.
+
+\bibitem{side}S. Shamai and S. Verdu,\emph{Capacity of channels with uncoded side information}, European Trans. Telecommun., vol. 6,
+no. 5, pp. 587–600, September-October 1995.
+
+\bibitem{tese} F. Pujaico, “Hard decision algorithms for LDGM Codes,” (In portuguese),
+Master Thesis, State University of Campinas, Brazil, p. 55, 2011, Available: http://www.bibliotecadigital.unicamp.br.
+
+\bibitem{art-garciafrias} J. F. Garcia-Frias e W. Zhong, \emph{Approaching Shannon performance by
+iterative decoding of linear codes with low-density generator matrix,}
+~\textit{IEEE Commun. Lett.}, v. 7, n. 6, pp. 266-268, Junho 2003.
+
+\bibitem{kou} Y. Kou, S. Lin and M. Fossorier, \emph{Low-density parity-check codes
+based on finite geometries: a rediscovery and new results}, IEEE
+Trans. Inform. Theory, vol. 47, pp. 2711-2736, Nov. 2001.
+
+
+\bibitem{sipser} M. Sipser and D. Spielman, \emph{Expander codes}, IEEE Trans. Inform.
+Theory, vol. 42, pp. 1710-1722, Nov. 1996.
+
+
+
+\end{thebibliography}
+
+\end{document}
+
+*********************
+***************************
+citar as restrições do cenario do joão: canais independentes, transferir a complexide dos nos sensores para o decodificador central e o decodificador
+tem sua complexidade aumentada mas "manageable". Estas tres caracteristicas sao consideradas no nosso cenário.
+
+o problema de decodificar fontes correlacionadas em canais ruidosos está relacionado com o problema conhecido como CEO. texto raheli 2012.
+regra map otima decoding + fusion. Pode-se separar e fazer decoding e depois fusion que é mais simples.
+
+falar sobre paralelismo dos algoritmos (raheli2012 e japoneses). as informaçoes dos outros decodificadores sao como side information. dai descrever resultados
+como side information.
+
+*********************************
+
+***************************
+
+
+Em todas as simulações os algoritmos de decodificação usaram $IT=15$ iterações como máximo antes de
+desistir de corrigir os erros. O desempenho num canal não codificado
+esta desenhado com uma linha pontuada ``$-.-$''. Todas as fontes foram codificadas com uma
+$LDGM$ como um valor de $k=204$ bits de informação e $n=306$ bits codificados. Cada bit codificado usou $X=5$\cite{art-garciafrias}  bits de
+informação para ser gerado. Se aplicaram a todas as fontes os algoritmos $PHBF$ e
+$DS-PHBF$. Está desenhado com ``$*$'' o desempenho dos algoritmos $PHBF$, como é natural a
+decodificação de todas as fontes tem o mesmo desempenho dado que usam o mesmo algoritmo e
+a mesma matriz de verificação de paridade $H$. O desempenho dos algoritmos $DS-PHBF$ se vê desenhado com ``$-$''
+, O valor médio do desempenho destes algoritmos está desenhado com ``$\Box$''.
+Todas as fontes $u_i$ foram gerados seguindo o modelo de geração de fontes explicado na seção \ref{sec:SystemModel}.
+
+  A Figura \ref{fig:fig2} mostra o desempenho do algoritmo $DS-PHBF$ para
+$10$ fontes binarias correlacionadas $u_i$  com $i \in \{1, 2, \dots, 10\}$ e $H(u_i)=1.0$ .
+As fontes foram criadas seguindo una distribuição uniforme de $p_i$ entre $0.001$ e $0.999$,os valores $p_i \in \{$
+0.001, 0.097, 0.358, 0.070, 0.592, 0.295, 0.904, 0.245, 0.822, 0.188 $\}$. Sendo o menor valor de $p_i=0.001$ e
+o máximo valor de $p_i=0.904$.
+Como pode-se ver todos os canais tiveram uma apreciável melhora no seu desempenho, nenhum dos canais piorou
+seu desempenho. . A media do desempenho dos algoritmos $DS-PHBF$  mostrou ser ligeiramente melhor do desempenho dos algoritmos $PHBF$.
+
+A Figura \ref{fig:fig3} mostra o desempenho do algoritmo $DS-PHBF$ para
+$100$ fontes binarias correlacionadas $u_i$  com $i \in \{1, 2, \dots, 100\}$ e $H(u_i)=1.0$ .
+As fontes foram criadas seguindo uma distribuição uniforme de $p_i$ entre $0.001$ e $0.999$.
+Sendo o menor valor de $p_i=0.036181$ e o máximo valor de $p_i=0.95469$.
+Como pode-se ver todos os canais tiveram uma apreciável melhora no seu desempenho, nenhum dos canais pioraram
+seu desempenho. O desempenho dos algoritmos $DS-PHBF$ em media mostraram ser ligeiramente melhor do desempenho dos algoritmos $PHBF$.
+
+***************************************************
+
+Existem  muitos algoritmos simples para realizar uma decodificação da informação
+que percorre um canal com ruido. Estes algoritmos podem usar uma decisão suave (``soft'') ou abrupta (``hard'').
+Se diz que um algoritmo de decodificação realiza uma decisão suave se utiliza na sua predição
+dados que são números reais, pelo contrario se diz que o algoritmo de decodificação
+realiza uma decisão abrupta quando usa dados inteiros como dados de entrada.
+
+Aqui se trabalhará sobre algoritmos de decodificação para códigos de verificação de
+paridade de baixa densidade ou também chamado $LDPC$, do inglês ``Low Density Parity
+Check''.
+
+*************
+Entre os algoritmos de decodificação independente temos.
+
+
+\subsubsection{Algoritmo Parallel Hard Bit-Flipping}
+\label{Subsubsec:PHBF}
+
+Ela trabalha sobre um vetor de entrada binário $Z$ e tem como regra de
+geração de confiabilidade, ${E_I}_j$,
+\begin{equation}\label{Eq:E_SSBF}
+{E_I}_j=\sum_{l\in \mathcal{M}(j)} (2 s_{l} - 1),
+\end{equation}
+O critério de troca dos bit errados é igual ao algoritmo $BF$. Troca-se todos os bits com um ${E_I}_j \geq \delta$. Para a
+implementação atual usou-se como $\delta$ o maior valor de ${E_I}_j$. O algoritmo
+\ref{alg:PHBitFlipping1} detalha todo o procedimento para a decodificação
+$PHBF$.
+
+\begin{algorithm}[Decodificação Parallel Hard Bit-Flipping]
+\begin{enumerate}
+\item Inicia-se com $i=0$ e o vetor de decisão abrupta ${Z}^{(i)} = (z^{(i)}_1, \cdots, z^{(i)}_j, \cdots, z^{(i)}_n)=$ $Z$.
+\item Calcula-se a síndrome  $S=H^t Z^{(i)}$ (mod 2). Se todos os valores $s_l$ com $l = \{0,\cdots, L-1\}$
+ são zero, então pára a decodificação e se retorna o vetor
+${Z}^{(i)}$.
+\item Para $j=0,\cdots, n-1$,  avalia-se a função de flipping ${E_I}_{j}$ em (\ref{Eq:E_SSBF}).
+\item Identifica-se o conjunto $\{ j^{*} \}$, onde $j^{*}=\arg \max_{j} {E_I}_{j}$.
+\item Troca-se de valor todos os bits $z^{(i)}_j$ onde $j \in \{ j^{*} \}$, e faz-se $Z^{(i+1)}=Z^{(i)}$.
+\item Se o máximo número de iterações não é atingido, faz-se $i=i+1$ e vai-se ao passo 2.
+ Caso contrário, se detêm a decodificação e se retorna $Z$.
+\end{enumerate}
+\label{alg:PHBitFlipping1}
+\end{algorithm}
+
+
+A confiabilidade de cada bit $z_j$ é calculada somando a quantidade de bits de
+verificação de paridade $s_l$ que ligados a $z_j$ indiquem a existência de
+um erro, e diminuindo a quantidade de bits de
+verificação de paridade $s_l$ que ligados ao bit $z_j$ não indiquem a existência de
+erro. ``\textit{Muito parecido a uma votação, onde são contabilizados os votos em contra
+e os votos a favor que anulam um voto em contra, ao final o conjunto de bits que tenham mais
+votos em contra serão trocados}''.
+
+O algoritmo de decodificação conjunta aqui apresentado é uma modificação aos algoritmos
+de decodificação independente. Em geral a modificação
+será trocar o uso da confiabilidade independente ${E_I}_j$ do bit $z_j$ por uma confiabilidade total
+${E_T}_j = {E_I}_j+ \beta {E_C}_j$. Onde $\beta$ é um fator de ponderação e
+${E_C}_j$ é a confiabilidade conjunta  para cada bit $z_j$ do vetor recebido $Z$.
+Esta confiabilidade conjunta será calculada usando os dados dos bits recebidos dos outros
+$m-1$ canais e ponderado em função à correlação como eles. Assim o caso da decodificação
+independente é um caso especifico da decodificação conjunta quanto $\beta = 0 $ .
+
+Para fazer a decodificação conjunta se definirá para cada um dos $m$ canais de informação
+a confiabilidade ${E_T}_j^i$, onde $i$ indica a que canal
+corresponde a confiabilidade do bit recebido $z_j^i$.
+
+
+**************
+\subsubsection{Algoritmo Distributed Sources Parallel Hard Bit-Flipping}
+\label{Subsubsec:DSPHBF81}
+O algoritmo ``Distributed Sources Parallel Hard Bit-Flipping'' (DS-PHBF) usa como
+confiabilidade
+
+\begin{equation}\label{eq:DSPHBF381}
+{E_T}^i_j={E_I}^i_j+ \lfloor \beta  {E_C}^i_j   \rfloor.
+\end{equation}
+
+Onde $\lfloor b \rfloor$ é o máximo inteiro de $b$, e $\beta$ é um fator de ponderação entre
+a confiabilidade independente e a confiabilidade conjunta. Para calcular ${E_C}^i_j$ é
+necessário conhecer
+\begin{equation}\label{eq:DSPHBF181}
+L^i=\sum^m_{a=1|(a\neq i)}1,
+\end{equation}
+dado que
+\begin{equation}\label{eq:DSPHBF281}
+\begin{matrix}
+{E_C}^i_j= & \sum^m_{a=1|(a\neq i,z^i_j\neq z^a_j)}\frac{{E_I}^a_j ~ Corr(i,a)}{L^i} \\
+ ~         & -\sum^m_{a=1|(a\neq i,z^i_j= z^a_j)}\frac{{E_I}^a_j~Corr(i,a)}{L^i}
+\end{matrix}
+\end{equation}
+
+As fontes $u_i$ foram geradas usando uma fonte primaria binaria $u_0$ com $p(u_0=1)=0.5$
+e fontes secundarias $e_i$, $i \in \{1, ... , m\}$. Onde $p(e_i=1)=p_i$
+\begin{equation}\label{eq:fontes}
+u_i=u_0 \otimes e_i
+\end{equation}
+
+Como pode-se ver na Figura \ref{fig:modelo} se tem $m$ canais ruidosos com
+vetores $Y_i$ na sua saída, ou com sua contraparte abrupta $Z_i$. Pode-se realizar
+com estes vetores uma decodificação para obter uma estimado $\hat{U}_i$ de $U_i$,
+baseando-se só na redundância acrescenta por cada codificador fonte-canal de taxa $r$ (a esto
+se chamará decodificação independente), ou pode-se usar a informação redundante
+acrescentada pelo conhecimento da informação ruidosa recebida das outras $m-1$
+fontes $u_i$ (esto se chamará decodificação conjunta).
+
+*******************
+***************************
+O desempenho do algoritmo $DS-PHBF$ se vê na Figura \ref{fig:fig2}.
+Nesta figura temos $10$ fontes binarias correlacionadas $u_i$  com $i \in \{1, 2, \dots, 10\}$ e $H(u_i)=1.0$ .
+
+As fontes foram criadas seguindo una distribuição uniforme entre $0.001$ e $0.999$ para os valores $p_i \in \{$
+0.001, 0.097, 0.358, 0.070, 0.592, 0.295, 0.904, 0.245, 0.822, 0.188 $\}$ no modelo de geração de
+fontes explicado na seção \ref{sec:SystemModel}. As $10$ fontes foram codificadas com um código
+$LDGM$ como um valor de $k=204$ bits de informação e $n=306$ bits codificados. A proteção para os bits de
+informação dentro do vetor codificado é de $X=5$. Se aplicaram a todas as fontes os algoritmos $PHBF$ e
+$DS-PHBF$.
+
+Na Figura \ref{fig:fig2} se vê desenhado com ``$*$'' o desempenho dos
+algoritmos $PHBF$, como é natural a decodificação de todas as fontes tem o mesmo desempenho dado que usam o mesmo algoritmo e
+a mesma matriz de verificação de paridade. O desempenho dos algoritmos $DS-PHBF$ se vê desenhado com ``$-$'',
+como pode-se ver todos os canais tiveram uma apreciável melhora no seu desempenho, nenhum dos canais pioraram
+seu desempenho. A media do desempenho do algoritmo esta desenhado com ``$\Box$''. O desempenho dos algoritmos
+$DS-PHBF$ em media mostraram ser ligeiramente melhor do desempenho dos algoritmos $PHBF$. Todos os algoritmos
+usaram $IT=15$ iterações como máximo antes de desistir de corrigir os erros. O limite inferior do desempenho
+dos códigos $LDGM$ \cite{art-garciafrias} esta desenhado com ``$O$''. O desempenho num canal não codificado
+esta desenhado com uma linha pontuada ``$-.-$''.
+
+
+
+\begin{figure}[h!bt]
+\centering \includegraphics[width=8.5cm]{{./fig2.eps}}
+\caption{Gráfico do desempenho da decodificação de 10 fontes $u_i$ correlacionadas
+com $K=204$ e $N=306$ com códigos LDGM $X=5$ e $Y=10$.}
+\label{fig:fig2}
+\end{figure}
+
+Fig. \ref{fig:fig2} compares the performance of independent and joint decoding for $10$ correlated sources. The set of values for the probabilities $p_i$, $i=1, 2, \ldots, 10,$ are shown in Table I. The lowest value ($p_i=0.001$) was intentionally selected and the others were generated randomly according to an uniform distribution ranging from $p_i=0.001$ and $p_i=0.999$. The optimal value obtained for parameter $\beta$ was $2.0$.  As can be seen in the Figure, joint decoding performs better than independent decoding for all sources. Moreover, the decoder for the source with highest correlation value $corr(u^{0},u^{i})$ has the best performance. The average performace of all decoders is also shown in the Figure.
+
+ Fig. \ref{fig:fig3} compares the performance of independent and joint decoding for $100$ correlated sources. The set of values for the probabilities $p_i$, $i=1, 2, \ldots, 100,$ were generated according to an uniform distribution ranging from $p_i=0.001$ and $p_i=0.999$.
+The smallest generated value was $p_i=0.036181$ and the greatest value was $p_i=0.95469$. The optimal value obtained for parameter $\beta$ was $2.0$.  As can be seen in the Figure, joint decoding performs better than independent decoding for all sources. As for the case of $10$ sources, the decoder for the source with highest correlation value $corr(u^{0},u^{i})$ has the best performance. The average performace of all decoders is also shown in the Figure.

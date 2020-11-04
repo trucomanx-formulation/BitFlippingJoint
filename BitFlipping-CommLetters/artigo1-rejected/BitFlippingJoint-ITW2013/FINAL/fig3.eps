@@ -1,0 +1,7656 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: fig3.eps
+%%Creator: gnuplot 4.6 patchlevel 0
+%%CreationDate: Mon Apr 22 09:55:33 2013
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 626 482
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color false def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 true def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -146 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 626 50 lineto 626 482 lineto 50 482 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 4.4 (August 2010)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  gsave 1 setgray fill grestore clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {Gshow} {stringwidth pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get stringwidth pop -2 div
+     dup 0 R} {dup 6 get stringwidth pop -2 div 0 R 6 get
+     show 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (fig3.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.6 patchlevel 0)
+  /Author (fpujaico)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Mon Apr 22 09:55:33 2013)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 440 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 11520.00 8640.00 BoxColFill} if
+gsave % colour palette begin
+/maxcolors 64 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor true def
+/grayindex {/gidx 0 def
+  {GrayA gidx get grayv ge {exit} if /gidx gidx 1 add def} loop} def
+/dgdx {grayv GrayA gidx get sub GrayA gidx 1 sub get
+  GrayA gidx get sub div} def 
+/redvalue {RedA gidx get RedA gidx 1 sub get
+  RedA gidx get sub dgdxval mul add} def
+/greenvalue {GreenA gidx get GreenA gidx 1 sub get
+  GreenA gidx get sub dgdxval mul add} def
+/bluevalue {BlueA gidx get BlueA gidx 1 sub get
+  BlueA gidx get sub dgdxval mul add} def
+/interpolate {
+  grayindex grayv GrayA gidx get sub abs 1e-5 le
+    {RedA gidx get GreenA gidx get BlueA gidx get}
+    {/dgdxval dgdx def redvalue greenvalue bluevalue} ifelse} def
+/GrayA [0 .0159 .0317 .0476 .0635 .0794 .0952 .1111 .127 .1429 .1587 .1746 
+  .1905 .2063 .2222 .2381 .254 .2698 .2857 .3016 .3175 .3333 .3492 .3651 
+  .381 .3968 .4127 .4286 .4444 .4603 .4762 .4921 .5079 .5238 .5397 .5556 
+  .5714 .5873 .6032 .619 .6349 .6508 .6667 .6825 .6984 .7143 .7302 .746 
+  .7619 .7778 .7937 .8095 .8254 .8413 .8571 .873 .8889 .9048 .9206 .9365 
+  .9524 .9683 .9841 1 ] def
+/RedA [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .0238 .0873 .1508 
+  .2143 .2778 .3413 .4048 .4683 .5317 .5952 .6587 .7222 .7857 .8492 .9127 
+  .9762 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 .9444 .881 .8175 .754 .6905 .627 
+  .5635 .5 ] def
+/GreenA [0 0 0 0 0 0 0 0 .0079 .0714 .1349 .1984 .2619 .3254 .3889 .4524 
+  .5159 .5794 .6429 .7063 .7698 .8333 .8968 .9603 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9603 .8968 .8333 .7698 .7063 .6429 .5794 .5159 .4524 .3889 .3254 
+  .2619 .1984 .1349 .0714 .0079 0 0 0 0 0 0 0 0 ] def
+/BlueA [.5 .5635 .627 .6905 .754 .8175 .881 .9444 1 1 1 1 1 1 1 1 1 1 1 1 1 
+  1 1 1 .9762 .9127 .8492 .7857 .7222 .6587 .5952 .5317 .4683 .4048 .3413 
+  .2778 .2143 .1508 .0873 .0238 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+  0 0 ] def
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF7 Constrain exch dup cF5 Constrain exch cF15 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+0.500 UL
+LTb
+0.500 UL
+LTa
+1892 1408 M
+8835 0 V
+stroke
+LTb
+1892 1408 M
+88 0 V
+8747 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1628 1408 M
+[ [({}) 440.0 0.0 true true 0 (10)]
+[({}) 352.0 220.0 true true 0 (-5)]
+] -190.7 MRshow
+0.500 UL
+LTb
+1892 1408 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 1812 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 2048 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 2215 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 2345 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 2451 M
+44 0 V
+8791 0 R
+-44 0 V
+-8791 90 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 78 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 68 R
+44 0 V
+8791 0 R
+-44 0 V
+stroke
+LTa
+1892 2749 M
+264 0 V
+4551 0 R
+4020 0 V
+stroke
+LTb
+1892 2749 M
+88 0 V
+8747 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1628 2749 M
+[ [({}) 440.0 0.0 true true 0 (10)]
+[({}) 352.0 220.0 true true 0 (-4)]
+] -190.7 MRshow
+0.500 UL
+LTb
+1892 2749 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 3152 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 3388 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 3556 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 3686 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 3792 M
+44 0 V
+8791 0 R
+-44 0 V
+-8791 90 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 77 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 69 R
+44 0 V
+8791 0 R
+-44 0 V
+stroke
+LTa
+1892 4089 M
+8835 0 V
+stroke
+LTb
+1892 4089 M
+88 0 V
+8747 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1628 4089 M
+[ [({}) 440.0 0.0 true true 0 (10)]
+[({}) 352.0 220.0 true true 0 (-3)]
+] -190.7 MRshow
+0.500 UL
+LTb
+1892 4089 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 4493 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 4729 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 4896 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 5026 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 5132 M
+44 0 V
+8791 0 R
+-44 0 V
+-8791 90 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 78 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 68 R
+44 0 V
+8791 0 R
+-44 0 V
+stroke
+LTa
+1892 5430 M
+8835 0 V
+stroke
+LTb
+1892 5430 M
+88 0 V
+8747 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1628 5430 M
+[ [({}) 440.0 0.0 true true 0 (10)]
+[({}) 352.0 220.0 true true 0 (-2)]
+] -190.7 MRshow
+0.500 UL
+LTb
+1892 5430 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 5833 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 6069 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 6237 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 6367 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 6473 M
+44 0 V
+8791 0 R
+-44 0 V
+-8791 90 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 77 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 69 R
+44 0 V
+8791 0 R
+-44 0 V
+stroke
+LTa
+1892 6770 M
+8835 0 V
+stroke
+LTb
+1892 6770 M
+88 0 V
+8747 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1628 6770 M
+[ [({}) 440.0 0.0 true true 0 (10)]
+[({}) 352.0 220.0 true true 0 (-1)]
+] -190.7 MRshow
+0.500 UL
+LTb
+1892 6770 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 7174 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 7410 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 7578 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 7707 M
+44 0 V
+8791 0 R
+-44 0 V
+1892 7814 M
+44 0 V
+8791 0 R
+-44 0 V
+-8791 89 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 78 R
+44 0 V
+8791 0 R
+-44 0 V
+-8791 69 R
+44 0 V
+8791 0 R
+-44 0 V
+stroke
+LTa
+1892 8111 M
+8835 0 V
+stroke
+LTb
+1892 8111 M
+88 0 V
+8747 0 R
+-88 0 V
+stroke
+0.00 0.00 0.00 C 1628 8111 M
+[ [({}) 440.0 0.0 true true 0 (10)]
+[({}) 352.0 220.0 true true 0 (0)]
+] -190.7 MRshow
+0.500 UL
+LTb
+1892 8111 M
+44 0 V
+8791 0 R
+-44 0 V
+stroke
+LTa
+1892 1408 M
+0 6703 V
+stroke
+LTb
+1892 1408 M
+0 88 V
+0 6615 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 1892 968 M
+[ [({}) 440.0 0.0 true true 0 (0)]
+] -146.7 MCshow
+0.500 UL
+LTb
+0.500 UL
+LTa
+3365 1408 M
+0 63 V
+0 1760 R
+0 4880 V
+stroke
+LTb
+3365 1408 M
+0 88 V
+0 6615 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 3365 968 M
+[ [({}) 440.0 0.0 true true 0 (1)]
+] -146.7 MCshow
+0.500 UL
+LTb
+0.500 UL
+LTa
+4837 1408 M
+0 63 V
+0 1760 R
+0 4880 V
+stroke
+LTb
+4837 1408 M
+0 88 V
+0 6615 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 4837 968 M
+[ [({}) 440.0 0.0 true true 0 (2)]
+] -146.7 MCshow
+0.500 UL
+LTb
+0.500 UL
+LTa
+6310 1408 M
+0 63 V
+0 1760 R
+0 4880 V
+stroke
+LTb
+6310 1408 M
+0 88 V
+0 6615 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 6310 968 M
+[ [({}) 440.0 0.0 true true 0 (3)]
+] -146.7 MCshow
+0.500 UL
+LTb
+0.500 UL
+LTa
+7782 1408 M
+0 6703 V
+stroke
+LTb
+7782 1408 M
+0 88 V
+0 6615 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 7782 968 M
+[ [({}) 440.0 0.0 true true 0 (4)]
+] -146.7 MCshow
+0.500 UL
+LTb
+0.500 UL
+LTa
+9255 1408 M
+0 6703 V
+stroke
+LTb
+9255 1408 M
+0 88 V
+0 6615 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 9255 968 M
+[ [({}) 440.0 0.0 true true 0 (5)]
+] -146.7 MCshow
+0.500 UL
+LTb
+0.500 UL
+LTa
+10727 1408 M
+0 6703 V
+stroke
+LTb
+10727 1408 M
+0 88 V
+0 6615 R
+0 -88 V
+stroke
+0.00 0.00 0.00 C 10727 968 M
+[ [({}) 440.0 0.0 true true 0 (6)]
+] -146.7 MCshow
+0.500 UL
+LTb
+0.500 UL
+LTb
+1892 8111 N
+0 -6703 V
+8835 0 V
+0 6703 V
+-8835 0 V
+Z stroke
+0.00 0.00 0.00 C 352 4759 M
+currentpoint gsave translate 90 rotate 0 0 moveto
+[ [({}) 440.0 0.0 true true 0 (BER)]
+] -146.7 MCshow
+grestore
+LTb
+0.00 0.00 0.00 C 6309 308 M
+[ [({}) 440.0 0.0 true true 0 (Eb/No \(dB\))]
+] -146.7 MCshow
+LTb
+1.000 UP
+0.500 UL
+LTb
+1.000 UL
+LTb
+2156 1471 N
+0 1760 V
+4551 0 V
+0 -1760 V
+-4551 0 V
+Z stroke
+% Begin plot #1
+1.111 UP
+1.500 UL
+LT1
+0.00 0.00 1.00 C LCb setrgbcolor
+5060 3011 M
+[ [({}) 440.0 0.0 true true 0 (Uncoded)]
+] -146.7 MRshow
+LT1
+0.00 0.00 1.00 C 5324 3011 M
+1119 0 V
+1897 6641 M
+491 -83 V
+491 -41 V
+490 -84 V
+491 -71 V
+490 -87 V
+491 -77 V
+491 -77 V
+490 -96 V
+491 -120 V
+491 -110 V
+490 -111 V
+491 -125 V
+491 -137 V
+490 -139 V
+491 -154 V
+491 -165 V
+490 -173 V
+489 -193 V
+1897 6641 CircleF
+2388 6558 CircleF
+2879 6517 CircleF
+3369 6433 CircleF
+3860 6362 CircleF
+4350 6275 CircleF
+4841 6198 CircleF
+5332 6121 CircleF
+5822 6025 CircleF
+6313 5905 CircleF
+6804 5795 CircleF
+7294 5684 CircleF
+7785 5559 CircleF
+8276 5422 CircleF
+8766 5283 CircleF
+9257 5129 CircleF
+9748 4964 CircleF
+10238 4791 CircleF
+5883 3011 CircleF
+% End plot #1
+% Begin plot #2
+3.333 UP
+1.500 UL
+LT0
+0.00 0.50 0.00 C LCb setrgbcolor
+5060 2571 M
+[ [({}) 440.0 0.0 true true 0 (Average)]
+] -146.7 MRshow
+LT0
+0.00 0.50 0.00 C 5324 2571 M
+1119 0 V
+1897 7036 M
+491 -39 V
+491 -47 V
+490 -52 V
+491 -65 V
+490 -72 V
+491 -97 V
+491 -127 V
+490 -150 V
+491 -178 V
+491 -212 V
+490 -248 V
+491 -281 V
+491 -324 V
+490 -349 V
+491 -386 V
+491 -408 V
+490 -417 V
+489 -423 V
+1897 7036 Box
+2388 6997 Box
+2879 6950 Box
+3369 6898 Box
+3860 6833 Box
+4350 6761 Box
+4841 6664 Box
+5332 6537 Box
+5822 6387 Box
+6313 6209 Box
+6804 5997 Box
+7294 5749 Box
+7785 5468 Box
+8276 5144 Box
+8766 4795 Box
+9257 4409 Box
+9748 4001 Box
+10238 3584 Box
+5883 2571 Box
+% End plot #2
+% Begin plot #3
+3.333 UP
+1.500 UL
+LT1
+1.00 0.00 0.00 C LCb setrgbcolor
+5060 2131 M
+[ [({}) 440.0 0.0 true true 0 (Independent)]
+] -146.7 MRshow
+LT1
+1.00 0.00 0.00 C 5324 2131 M
+1119 0 V
+1897 7100 M
+491 -51 V
+491 -49 V
+490 -30 V
+491 -39 V
+490 -58 V
+491 -63 V
+491 -78 V
+490 -137 V
+491 -122 V
+491 -152 V
+490 -238 V
+491 -285 V
+491 -282 V
+490 -323 V
+491 -419 V
+491 -422 V
+490 -431 V
+489 -499 V
+1897 7100 Star
+2388 7049 Star
+2879 7000 Star
+3369 6970 Star
+3860 6931 Star
+4350 6873 Star
+4841 6810 Star
+5332 6732 Star
+5822 6595 Star
+6313 6473 Star
+6804 6321 Star
+7294 6083 Star
+7785 5798 Star
+8276 5516 Star
+8766 5193 Star
+9257 4774 Star
+9748 4352 Star
+10238 3921 Star
+5883 2131 Star
+% End plot #3
+% Begin plot #4
+1.500 UL
+LT0
+0.00 0.75 0.75 C LCb setrgbcolor
+5060 1691 M
+[ [({}) 440.0 0.0 true true 0 (Joint )]
+] -146.7 MRshow
+LT0
+0.00 0.75 0.75 C 5324 1691 M
+1119 0 V
+1897 6934 M
+491 -89 V
+491 -67 V
+490 -93 V
+491 -133 V
+490 -144 V
+491 -286 V
+491 -294 V
+490 -367 V
+491 -271 V
+491 -354 V
+490 -315 V
+491 -316 V
+491 -223 V
+490 -208 V
+491 -274 V
+491 -278 V
+490 -261 V
+489 -278 V
+% End plot #4
+% Begin plot #5
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7084 M
+491 -47 V
+491 -26 V
+490 -39 V
+491 -57 V
+490 -41 V
+491 -104 V
+491 -43 V
+490 -141 V
+491 -130 V
+491 -213 V
+490 -173 V
+491 -254 V
+491 -314 V
+490 -322 V
+491 -395 V
+491 -445 V
+490 -411 V
+489 -518 V
+1897 7084 Star
+2388 7037 Star
+2879 7011 Star
+3369 6972 Star
+3860 6915 Star
+4350 6874 Star
+4841 6770 Star
+5332 6727 Star
+5822 6586 Star
+6313 6456 Star
+6804 6243 Star
+7294 6070 Star
+7785 5816 Star
+8276 5502 Star
+8766 5180 Star
+9257 4785 Star
+9748 4340 Star
+10238 3929 Star
+% End plot #5
+% Begin plot #6
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7015 M
+491 -61 V
+491 -28 V
+490 -67 V
+491 -73 V
+490 -93 V
+491 -107 V
+491 -140 V
+490 -243 V
+491 -215 V
+491 -248 V
+490 -293 V
+491 -305 V
+491 -305 V
+490 -350 V
+491 -337 V
+491 -353 V
+490 -362 V
+489 -366 V
+% End plot #6
+% Begin plot #7
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7027 M
+491 32 V
+491 -45 V
+490 -51 V
+491 -60 V
+490 -47 V
+491 -55 V
+491 -80 V
+490 -109 V
+491 -143 V
+491 -181 V
+490 -211 V
+491 -223 V
+491 -331 V
+490 -345 V
+491 -404 V
+491 -417 V
+490 -449 V
+489 -482 V
+1897 7027 Star
+2388 7059 Star
+2879 7014 Star
+3369 6963 Star
+3860 6903 Star
+4350 6856 Star
+4841 6801 Star
+5332 6721 Star
+5822 6612 Star
+6313 6469 Star
+6804 6288 Star
+7294 6077 Star
+7785 5854 Star
+8276 5523 Star
+8766 5178 Star
+9257 4774 Star
+9748 4357 Star
+10238 3908 Star
+% End plot #7
+% Begin plot #8
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 7027 M
+491 32 V
+491 -45 V
+490 -51 V
+491 -60 V
+490 -47 V
+491 -55 V
+491 -80 V
+490 -109 V
+491 -143 V
+491 -181 V
+490 -211 V
+491 -223 V
+491 -331 V
+490 -345 V
+491 -404 V
+491 -417 V
+490 -449 V
+489 -482 V
+% End plot #8
+% Begin plot #9
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7082 M
+491 -37 V
+491 -20 V
+490 -60 V
+491 -52 V
+490 -38 V
+491 -77 V
+491 -85 V
+490 -96 V
+491 -173 V
+491 -121 V
+490 -256 V
+491 -236 V
+491 -316 V
+490 -333 V
+491 -385 V
+491 -457 V
+490 -441 V
+489 -452 V
+1897 7082 Star
+2388 7045 Star
+2879 7025 Star
+3369 6965 Star
+3860 6913 Star
+4350 6875 Star
+4841 6798 Star
+5332 6713 Star
+5822 6617 Star
+6313 6444 Star
+6804 6323 Star
+7294 6067 Star
+7785 5831 Star
+8276 5515 Star
+8766 5182 Star
+9257 4797 Star
+9748 4340 Star
+10238 3899 Star
+% End plot #9
+% Begin plot #10
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7082 M
+491 -37 V
+491 -20 V
+490 -60 V
+491 -52 V
+490 -38 V
+491 -77 V
+491 -85 V
+490 -96 V
+491 -173 V
+491 -121 V
+490 -256 V
+491 -236 V
+491 -316 V
+490 -333 V
+491 -385 V
+491 -457 V
+490 -441 V
+489 -452 V
+% End plot #10
+% Begin plot #11
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7066 M
+491 -14 V
+491 -40 V
+490 -54 V
+491 -51 V
+490 -76 V
+491 -51 V
+491 -47 V
+490 -134 V
+491 -145 V
+491 -158 V
+490 -220 V
+491 -274 V
+491 -277 V
+490 -369 V
+491 -368 V
+491 -459 V
+490 -439 V
+489 -480 V
+1897 7066 Star
+2388 7052 Star
+2879 7012 Star
+3369 6958 Star
+3860 6907 Star
+4350 6831 Star
+4841 6780 Star
+5332 6733 Star
+5822 6599 Star
+6313 6454 Star
+6804 6296 Star
+7294 6076 Star
+7785 5802 Star
+8276 5525 Star
+8766 5156 Star
+9257 4788 Star
+9748 4329 Star
+10238 3890 Star
+% End plot #11
+% Begin plot #12
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7033 M
+491 -34 V
+491 -57 V
+490 -56 V
+491 -68 V
+490 -79 V
+491 -102 V
+491 -80 V
+490 -206 V
+491 -222 V
+491 -223 V
+490 -289 V
+491 -301 V
+491 -344 V
+490 -366 V
+491 -366 V
+491 -360 V
+490 -403 V
+489 -358 V
+% End plot #12
+% Begin plot #13
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7099 M
+491 -38 V
+491 -34 V
+490 -48 V
+491 -68 V
+490 -43 V
+491 -71 V
+491 -98 V
+490 -121 V
+491 -126 V
+491 -176 V
+490 -192 V
+491 -257 V
+491 -319 V
+490 -324 V
+491 -410 V
+491 -437 V
+490 -477 V
+489 -446 V
+1897 7099 Star
+2388 7061 Star
+2879 7027 Star
+3369 6979 Star
+3860 6911 Star
+4350 6868 Star
+4841 6797 Star
+5332 6699 Star
+5822 6578 Star
+6313 6452 Star
+6804 6276 Star
+7294 6084 Star
+7785 5827 Star
+8276 5508 Star
+8766 5184 Star
+9257 4774 Star
+9748 4337 Star
+10238 3860 Star
+% End plot #13
+% Begin plot #14
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7096 M
+491 -37 V
+491 -29 V
+490 -56 V
+491 -62 V
+490 -49 V
+491 -72 V
+491 -105 V
+490 -114 V
+491 -138 V
+491 -219 V
+490 -196 V
+491 -276 V
+491 -330 V
+490 -315 V
+491 -422 V
+491 -414 V
+490 -468 V
+489 -426 V
+% End plot #14
+% Begin plot #15
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7098 M
+491 -57 V
+491 -26 V
+490 -39 V
+491 -60 V
+490 -50 V
+491 -47 V
+491 -125 V
+490 -109 V
+491 -130 V
+491 -163 V
+490 -226 V
+491 -260 V
+491 -298 V
+490 -349 V
+491 -389 V
+491 -431 V
+490 -456 V
+489 -464 V
+1897 7098 Star
+2388 7041 Star
+2879 7015 Star
+3369 6976 Star
+3860 6916 Star
+4350 6866 Star
+4841 6819 Star
+5332 6694 Star
+5822 6585 Star
+6313 6455 Star
+6804 6292 Star
+7294 6066 Star
+7785 5806 Star
+8276 5508 Star
+8766 5159 Star
+9257 4770 Star
+9748 4339 Star
+10238 3883 Star
+% End plot #15
+% Begin plot #16
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 6973 M
+491 -76 V
+491 -53 V
+490 -76 V
+491 -140 V
+490 -103 V
+491 -208 V
+491 -274 V
+490 -277 V
+491 -302 V
+491 -345 V
+490 -267 V
+491 -331 V
+491 -256 V
+490 -308 V
+491 -257 V
+491 -284 V
+490 -330 V
+489 -281 V
+% End plot #16
+% Begin plot #17
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 6992 M
+491 46 V
+491 -12 V
+490 -64 V
+491 -39 V
+490 -78 V
+491 -54 V
+491 -86 V
+490 -117 V
+491 -116 V
+491 -142 V
+490 -251 V
+491 -253 V
+491 -299 V
+490 -343 V
+491 -411 V
+491 -408 V
+490 -451 V
+489 -508 V
+1897 6992 Star
+2388 7038 Star
+2879 7026 Star
+3369 6962 Star
+3860 6923 Star
+4350 6845 Star
+4841 6791 Star
+5332 6705 Star
+5822 6588 Star
+6313 6472 Star
+6804 6330 Star
+7294 6079 Star
+7785 5826 Star
+8276 5527 Star
+8766 5184 Star
+9257 4773 Star
+9748 4365 Star
+10238 3914 Star
+% End plot #17
+% Begin plot #18
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 6992 M
+491 46 V
+491 -12 V
+490 -64 V
+491 -39 V
+490 -78 V
+491 -54 V
+491 -86 V
+490 -117 V
+491 -116 V
+491 -142 V
+490 -251 V
+491 -253 V
+491 -299 V
+490 -343 V
+491 -411 V
+491 -408 V
+490 -451 V
+489 -508 V
+% End plot #18
+% Begin plot #19
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7131 M
+491 -92 V
+491 -41 V
+490 -33 V
+491 -54 V
+490 -44 V
+491 -73 V
+491 -89 V
+490 -136 V
+491 -112 V
+491 -201 V
+490 -175 V
+491 -247 V
+491 -308 V
+490 -370 V
+491 -379 V
+491 -429 V
+490 -473 V
+489 -464 V
+1897 7131 Star
+2388 7039 Star
+2879 6998 Star
+3369 6965 Star
+3860 6911 Star
+4350 6867 Star
+4841 6794 Star
+5332 6705 Star
+5822 6569 Star
+6313 6457 Star
+6804 6256 Star
+7294 6081 Star
+7785 5834 Star
+8276 5526 Star
+8766 5156 Star
+9257 4777 Star
+9748 4348 Star
+10238 3875 Star
+% End plot #19
+% Begin plot #20
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7037 M
+491 -49 V
+491 -48 V
+490 -36 V
+491 -75 V
+490 -64 V
+491 -83 V
+491 -114 V
+490 -228 V
+491 -180 V
+491 -266 V
+490 -223 V
+491 -313 V
+491 -312 V
+490 -355 V
+491 -394 V
+491 -389 V
+490 -404 V
+489 -388 V
+% End plot #20
+% Begin plot #21
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7078 M
+491 -38 V
+491 -42 V
+490 -38 V
+491 -38 V
+490 -41 V
+491 -77 V
+491 -86 V
+490 -126 V
+491 -141 V
+491 -154 V
+490 -224 V
+491 -245 V
+491 -301 V
+490 -351 V
+491 -392 V
+491 -424 V
+490 -436 V
+489 -527 V
+1897 7078 Star
+2388 7040 Star
+2879 6998 Star
+3369 6960 Star
+3860 6922 Star
+4350 6881 Star
+4841 6804 Star
+5332 6718 Star
+5822 6592 Star
+6313 6451 Star
+6804 6297 Star
+7294 6073 Star
+7785 5828 Star
+8276 5527 Star
+8766 5176 Star
+9257 4784 Star
+9748 4360 Star
+10238 3924 Star
+% End plot #21
+% Begin plot #22
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 6987 M
+491 -59 V
+491 -57 V
+490 -51 V
+491 -78 V
+490 -102 V
+491 -136 V
+491 -232 V
+490 -232 V
+491 -271 V
+491 -199 V
+490 -343 V
+491 -331 V
+491 -304 V
+490 -286 V
+491 -329 V
+491 -292 V
+490 -350 V
+489 -402 V
+% End plot #22
+% Begin plot #23
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7112 M
+491 -61 V
+491 -35 V
+490 -59 V
+491 -49 V
+490 -41 V
+491 -65 V
+491 -93 V
+490 -98 V
+491 -142 V
+491 -146 V
+490 -239 V
+491 -262 V
+491 -306 V
+490 -367 V
+491 -406 V
+491 -415 V
+490 -434 V
+489 -460 V
+1897 7112 Star
+2388 7051 Star
+2879 7016 Star
+3369 6957 Star
+3860 6908 Star
+4350 6867 Star
+4841 6802 Star
+5332 6709 Star
+5822 6611 Star
+6313 6469 Star
+6804 6323 Star
+7294 6084 Star
+7785 5822 Star
+8276 5516 Star
+8766 5149 Star
+9257 4743 Star
+9748 4328 Star
+10238 3894 Star
+% End plot #23
+% Begin plot #24
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7022 M
+491 -67 V
+491 -49 V
+490 -89 V
+491 -67 V
+490 -97 V
+491 -145 V
+491 -115 V
+490 -243 V
+491 -251 V
+491 -211 V
+490 -336 V
+491 -317 V
+491 -346 V
+490 -320 V
+491 -366 V
+491 -334 V
+490 -279 V
+489 -391 V
+% End plot #24
+% Begin plot #25
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7115 M
+491 -69 V
+491 -29 V
+490 -43 V
+491 -69 V
+490 -38 V
+491 -76 V
+491 -79 V
+490 -118 V
+491 -131 V
+491 -131 V
+490 -255 V
+491 -240 V
+491 -317 V
+490 -352 V
+491 -404 V
+491 -416 V
+490 -453 V
+489 -477 V
+1897 7115 Star
+2388 7046 Star
+2879 7017 Star
+3369 6974 Star
+3860 6905 Star
+4350 6867 Star
+4841 6791 Star
+5332 6712 Star
+5822 6594 Star
+6313 6463 Star
+6804 6332 Star
+7294 6077 Star
+7785 5837 Star
+8276 5520 Star
+8766 5168 Star
+9257 4764 Star
+9748 4348 Star
+10238 3895 Star
+% End plot #25
+% Begin plot #26
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7141 M
+491 -121 V
+491 -42 V
+490 -40 V
+491 -66 V
+490 -49 V
+491 -78 V
+491 -104 V
+490 -156 V
+491 -156 V
+491 -193 V
+490 -310 V
+491 -290 V
+491 -368 V
+490 -387 V
+491 -441 V
+491 -412 V
+490 -483 V
+489 -438 V
+% End plot #26
+% Begin plot #27
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7089 M
+491 -46 V
+491 -35 V
+490 -42 V
+491 -35 V
+490 -74 V
+491 -44 V
+491 -86 V
+490 -136 V
+491 -121 V
+491 -193 V
+490 -210 V
+491 -212 V
+491 -338 V
+490 -357 V
+491 -395 V
+491 -418 V
+490 -422 V
+489 -494 V
+1897 7089 Star
+2388 7043 Star
+2879 7008 Star
+3369 6966 Star
+3860 6931 Star
+4350 6857 Star
+4841 6813 Star
+5332 6727 Star
+5822 6591 Star
+6313 6470 Star
+6804 6277 Star
+7294 6067 Star
+7785 5855 Star
+8276 5517 Star
+8766 5160 Star
+9257 4765 Star
+9748 4347 Star
+10238 3925 Star
+% End plot #27
+% Begin plot #28
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7026 M
+491 -68 V
+491 -35 V
+490 -46 V
+491 -72 V
+490 -74 V
+491 -92 V
+491 -151 V
+490 -209 V
+491 -218 V
+491 -254 V
+490 -283 V
+491 -273 V
+491 -346 V
+490 -358 V
+491 -373 V
+491 -378 V
+490 -347 V
+489 -370 V
+% End plot #28
+% Begin plot #29
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7040 M
+491 11 V
+491 -50 V
+490 -52 V
+491 -33 V
+490 -26 V
+491 -123 V
+491 -68 V
+490 -86 V
+491 -160 V
+491 -128 V
+490 -249 V
+491 -277 V
+491 -282 V
+490 -354 V
+491 -382 V
+491 -443 V
+490 -458 V
+489 -488 V
+1897 7040 Star
+2388 7051 Star
+2879 7001 Star
+3369 6949 Star
+3860 6916 Star
+4350 6890 Star
+4841 6767 Star
+5332 6699 Star
+5822 6613 Star
+6313 6453 Star
+6804 6325 Star
+7294 6076 Star
+7785 5799 Star
+8276 5517 Star
+8766 5163 Star
+9257 4781 Star
+9748 4338 Star
+10238 3880 Star
+% End plot #29
+% Begin plot #30
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7007 M
+491 -32 V
+491 -73 V
+490 -45 V
+491 -68 V
+490 -52 V
+491 -160 V
+491 -146 V
+490 -184 V
+491 -231 V
+491 -240 V
+490 -290 V
+491 -314 V
+491 -339 V
+490 -341 V
+491 -326 V
+491 -415 V
+490 -353 V
+489 -358 V
+% End plot #30
+% Begin plot #31
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7078 M
+491 -38 V
+491 -37 V
+490 -53 V
+491 -32 V
+490 -41 V
+491 -73 V
+491 -54 V
+490 -166 V
+491 -141 V
+491 -153 V
+490 -214 V
+491 -259 V
+491 -293 V
+490 -319 V
+491 -421 V
+491 -445 V
+490 -436 V
+489 -456 V
+1897 7078 Star
+2388 7040 Star
+2879 7003 Star
+3369 6950 Star
+3860 6918 Star
+4350 6877 Star
+4841 6804 Star
+5332 6750 Star
+5822 6584 Star
+6313 6443 Star
+6804 6290 Star
+7294 6076 Star
+7785 5817 Star
+8276 5524 Star
+8766 5205 Star
+9257 4784 Star
+9748 4339 Star
+10238 3903 Star
+% End plot #31
+% Begin plot #32
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 7028 M
+491 -28 V
+491 -48 V
+490 -55 V
+491 -39 V
+490 -68 V
+491 -89 V
+491 -66 V
+490 -229 V
+491 -190 V
+491 -259 V
+490 -257 V
+491 -286 V
+491 -343 V
+490 -306 V
+491 -444 V
+491 -399 V
+490 -398 V
+489 -423 V
+% End plot #32
+% Begin plot #33
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7137 M
+491 -85 V
+491 -33 V
+490 -49 V
+491 -50 V
+490 -62 V
+491 -83 V
+491 -78 V
+490 -110 V
+491 -121 V
+491 -171 V
+490 -222 V
+491 -264 V
+491 -301 V
+490 -353 V
+491 -399 V
+491 -421 V
+490 -489 V
+489 -430 V
+1897 7137 Star
+2388 7052 Star
+2879 7019 Star
+3369 6970 Star
+3860 6920 Star
+4350 6858 Star
+4841 6775 Star
+5332 6697 Star
+5822 6587 Star
+6313 6466 Star
+6804 6295 Star
+7294 6073 Star
+7785 5809 Star
+8276 5508 Star
+8766 5155 Star
+9257 4756 Star
+9748 4335 Star
+10238 3846 Star
+% End plot #33
+% Begin plot #34
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7137 M
+491 -85 V
+491 -33 V
+490 -49 V
+491 -50 V
+490 -62 V
+491 -83 V
+491 -78 V
+490 -110 V
+491 -121 V
+491 -171 V
+490 -222 V
+491 -264 V
+491 -303 V
+490 -351 V
+491 -401 V
+491 -420 V
+490 -490 V
+489 -426 V
+% End plot #34
+% Begin plot #35
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7030 M
+491 18 V
+491 -40 V
+490 -33 V
+491 -50 V
+490 -34 V
+491 -89 V
+491 -94 V
+490 -102 V
+491 -150 V
+491 -166 V
+490 -209 V
+491 -235 V
+491 -319 V
+490 -380 V
+491 -368 V
+491 -428 V
+490 -420 V
+489 -490 V
+1897 7030 Star
+2388 7048 Star
+2879 7008 Star
+3369 6975 Star
+3860 6925 Star
+4350 6891 Star
+4841 6802 Star
+5332 6708 Star
+5822 6606 Star
+6313 6456 Star
+6804 6290 Star
+7294 6081 Star
+7785 5846 Star
+8276 5527 Star
+8766 5147 Star
+9257 4779 Star
+9748 4351 Star
+10238 3931 Star
+% End plot #35
+% Begin plot #36
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 7030 M
+491 15 V
+491 -40 V
+490 -42 V
+491 -44 V
+490 -22 V
+491 -98 V
+491 -112 V
+490 -102 V
+491 -176 V
+491 -190 V
+490 -224 V
+491 -253 V
+491 -334 V
+490 -395 V
+491 -357 V
+491 -414 V
+490 -407 V
+489 -523 V
+% End plot #36
+% Begin plot #37
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7143 M
+491 -95 V
+491 -31 V
+490 -59 V
+491 -33 V
+490 -56 V
+491 -94 V
+491 -68 V
+490 -101 V
+491 -136 V
+491 -171 V
+490 -219 V
+491 -253 V
+491 -324 V
+490 -325 V
+491 -396 V
+491 -437 V
+490 -432 V
+489 -484 V
+1897 7143 Star
+2388 7048 Star
+2879 7017 Star
+3369 6958 Star
+3860 6925 Star
+4350 6869 Star
+4841 6775 Star
+5332 6707 Star
+5822 6606 Star
+6313 6470 Star
+6804 6299 Star
+7294 6080 Star
+7785 5827 Star
+8276 5503 Star
+8766 5178 Star
+9257 4782 Star
+9748 4345 Star
+10238 3913 Star
+% End plot #37
+% Begin plot #38
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7078 M
+491 -81 V
+491 -37 V
+490 -45 V
+491 -60 V
+490 -60 V
+491 -106 V
+491 -97 V
+490 -147 V
+491 -234 V
+491 -203 V
+490 -303 V
+491 -307 V
+491 -345 V
+490 -352 V
+491 -360 V
+491 -391 V
+490 -377 V
+489 -430 V
+% End plot #38
+% Begin plot #39
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7051 M
+491 -6 V
+491 -33 V
+490 -23 V
+491 -82 V
+490 -45 V
+491 -69 V
+491 -76 V
+490 -104 V
+491 -139 V
+491 -176 V
+490 -215 V
+491 -269 V
+491 -298 V
+490 -338 V
+491 -402 V
+491 -448 V
+490 -427 V
+489 -480 V
+1897 7051 Star
+2388 7045 Star
+2879 7012 Star
+3369 6989 Star
+3860 6907 Star
+4350 6862 Star
+4841 6793 Star
+5332 6717 Star
+5822 6613 Star
+6313 6474 Star
+6804 6298 Star
+7294 6083 Star
+7785 5814 Star
+8276 5516 Star
+8766 5178 Star
+9257 4776 Star
+9748 4328 Star
+10238 3901 Star
+% End plot #39
+% Begin plot #40
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7021 M
+491 -65 V
+491 -56 V
+490 -35 V
+491 -113 V
+490 -88 V
+491 -107 V
+491 -174 V
+490 -206 V
+491 -218 V
+491 -347 V
+490 -238 V
+491 -360 V
+491 -284 V
+490 -319 V
+491 -357 V
+491 -348 V
+490 -317 V
+489 -401 V
+% End plot #40
+% Begin plot #41
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7124 M
+491 -74 V
+491 -39 V
+490 -30 V
+491 -64 V
+490 -70 V
+491 -61 V
+491 -105 V
+490 -93 V
+491 -147 V
+491 -138 V
+490 -220 V
+491 -268 V
+491 -307 V
+490 -294 V
+491 -402 V
+491 -461 V
+490 -487 V
+489 -419 V
+1897 7124 Star
+2388 7050 Star
+2879 7011 Star
+3369 6981 Star
+3860 6917 Star
+4350 6847 Star
+4841 6786 Star
+5332 6681 Star
+5822 6588 Star
+6313 6441 Star
+6804 6303 Star
+7294 6083 Star
+7785 5815 Star
+8276 5508 Star
+8766 5214 Star
+9257 4812 Star
+9748 4351 Star
+10238 3864 Star
+% End plot #41
+% Begin plot #42
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7100 M
+491 -76 V
+491 -51 V
+490 -27 V
+491 -85 V
+490 -66 V
+491 -57 V
+491 -127 V
+490 -140 V
+491 -188 V
+491 -203 V
+490 -287 V
+491 -312 V
+491 -372 V
+490 -301 V
+491 -424 V
+491 -460 V
+490 -430 V
+489 -400 V
+% End plot #42
+% Begin plot #43
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7041 M
+491 -4 V
+491 -44 V
+490 -31 V
+491 -62 V
+490 -31 V
+491 -66 V
+491 -119 V
+490 -84 V
+491 -164 V
+491 -157 V
+490 -206 V
+491 -213 V
+491 -349 V
+490 -364 V
+491 -356 V
+491 -466 V
+490 -420 V
+489 -461 V
+1897 7041 Star
+2388 7037 Star
+2879 6993 Star
+3369 6962 Star
+3860 6900 Star
+4350 6869 Star
+4841 6803 Star
+5332 6684 Star
+5822 6600 Star
+6313 6436 Star
+6804 6279 Star
+7294 6073 Star
+7785 5860 Star
+8276 5511 Star
+8766 5147 Star
+9257 4791 Star
+9748 4325 Star
+10238 3905 Star
+% End plot #43
+% Begin plot #44
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7001 M
+491 -51 V
+491 -68 V
+490 -57 V
+491 -77 V
+490 -81 V
+491 -167 V
+491 -237 V
+490 -157 V
+491 -324 V
+491 -221 V
+490 -306 V
+491 -284 V
+491 -339 V
+490 -315 V
+491 -320 V
+491 -351 V
+490 -319 V
+489 -358 V
+% End plot #44
+% Begin plot #45
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7094 M
+491 -53 V
+491 -46 V
+490 -20 V
+491 -61 V
+490 -83 V
+491 -40 V
+491 -94 V
+490 -100 V
+491 -140 V
+491 -169 V
+490 -217 V
+491 -238 V
+491 -317 V
+490 -336 V
+491 -394 V
+491 -428 V
+490 -484 V
+489 -474 V
+1897 7094 Star
+2388 7041 Star
+2879 6995 Star
+3369 6975 Star
+3860 6914 Star
+4350 6831 Star
+4841 6791 Star
+5332 6697 Star
+5822 6597 Star
+6313 6457 Star
+6804 6288 Star
+7294 6071 Star
+7785 5833 Star
+8276 5516 Star
+8766 5180 Star
+9257 4786 Star
+9748 4358 Star
+10238 3874 Star
+% End plot #45
+% Begin plot #46
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 7094 M
+491 -53 V
+491 -46 V
+490 -20 V
+491 -61 V
+490 -83 V
+491 -40 V
+491 -94 V
+490 -100 V
+491 -140 V
+491 -169 V
+490 -217 V
+491 -238 V
+491 -317 V
+490 -336 V
+491 -394 V
+491 -428 V
+490 -484 V
+489 -474 V
+% End plot #46
+% Begin plot #47
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7061 M
+491 -3 V
+491 -55 V
+490 -28 V
+491 -55 V
+490 -72 V
+491 -92 V
+491 -64 V
+490 -85 V
+491 -157 V
+491 -145 V
+490 -234 V
+491 -233 V
+491 -319 V
+490 -336 V
+491 -405 V
+491 -434 V
+490 -405 V
+489 -507 V
+1897 7061 Star
+2388 7058 Star
+2879 7003 Star
+3369 6975 Star
+3860 6920 Star
+4350 6848 Star
+4841 6756 Star
+5332 6692 Star
+5822 6607 Star
+6313 6450 Star
+6804 6305 Star
+7294 6071 Star
+7785 5838 Star
+8276 5519 Star
+8766 5183 Star
+9257 4778 Star
+9748 4344 Star
+10238 3939 Star
+% End plot #47
+% Begin plot #48
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7061 M
+491 -3 V
+491 -55 V
+490 -28 V
+491 -55 V
+490 -72 V
+491 -92 V
+491 -64 V
+490 -85 V
+491 -157 V
+491 -145 V
+490 -234 V
+491 -233 V
+491 -319 V
+490 -336 V
+491 -405 V
+491 -434 V
+490 -405 V
+489 -507 V
+% End plot #48
+% Begin plot #49
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7085 M
+491 -32 V
+491 -41 V
+490 -41 V
+491 -52 V
+490 -50 V
+491 -88 V
+491 -80 V
+490 -97 V
+491 -160 V
+491 -154 V
+490 -222 V
+491 -264 V
+491 -286 V
+490 -333 V
+491 -409 V
+491 -437 V
+490 -442 V
+489 -473 V
+1897 7085 Star
+2388 7053 Star
+2879 7012 Star
+3369 6971 Star
+3860 6919 Star
+4350 6869 Star
+4841 6781 Star
+5332 6701 Star
+5822 6604 Star
+6313 6444 Star
+6804 6290 Star
+7294 6068 Star
+7785 5804 Star
+8276 5518 Star
+8766 5185 Star
+9257 4776 Star
+9748 4339 Star
+10238 3897 Star
+% End plot #49
+% Begin plot #50
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 7085 M
+491 -32 V
+491 -41 V
+490 -41 V
+491 -52 V
+490 -50 V
+491 -88 V
+491 -80 V
+490 -97 V
+491 -160 V
+491 -154 V
+490 -222 V
+491 -264 V
+491 -286 V
+490 -333 V
+491 -409 V
+491 -437 V
+490 -442 V
+489 -473 V
+% End plot #50
+% Begin plot #51
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7095 M
+491 -54 V
+491 -28 V
+490 -58 V
+491 -25 V
+490 -76 V
+491 -71 V
+491 -70 V
+490 -111 V
+491 -127 V
+491 -179 V
+490 -209 V
+491 -284 V
+491 -277 V
+490 -332 V
+491 -408 V
+491 -434 V
+490 -461 V
+489 -468 V
+1897 7095 Star
+2388 7041 Star
+2879 7013 Star
+3369 6955 Star
+3860 6930 Star
+4350 6854 Star
+4841 6783 Star
+5332 6713 Star
+5822 6602 Star
+6313 6475 Star
+6804 6296 Star
+7294 6087 Star
+7785 5803 Star
+8276 5526 Star
+8766 5194 Star
+9257 4786 Star
+9748 4352 Star
+10238 3891 Star
+% End plot #51
+% Begin plot #52
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7023 M
+491 -57 V
+491 -31 V
+490 -55 V
+491 -51 V
+490 -100 V
+491 -97 V
+491 -156 V
+490 -170 V
+491 -198 V
+491 -233 V
+490 -310 V
+491 -323 V
+491 -318 V
+490 -334 V
+491 -421 V
+491 -326 V
+490 -387 V
+489 -344 V
+% End plot #52
+% Begin plot #53
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7089 M
+491 -35 V
+491 -41 V
+490 -40 V
+491 -52 V
+490 -80 V
+491 -57 V
+491 -118 V
+490 -88 V
+491 -124 V
+491 -142 V
+490 -240 V
+491 -268 V
+491 -292 V
+490 -352 V
+491 -402 V
+491 -413 V
+490 -444 V
+489 -469 V
+1897 7089 Star
+2388 7054 Star
+2879 7013 Star
+3369 6973 Star
+3860 6921 Star
+4350 6841 Star
+4841 6784 Star
+5332 6666 Star
+5822 6578 Star
+6313 6454 Star
+6804 6312 Star
+7294 6072 Star
+7785 5804 Star
+8276 5512 Star
+8766 5160 Star
+9257 4758 Star
+9748 4345 Star
+10238 3901 Star
+% End plot #53
+% Begin plot #54
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7101 M
+491 -63 V
+491 -38 V
+490 -45 V
+491 -53 V
+490 -65 V
+491 -80 V
+491 -120 V
+490 -116 V
+491 -153 V
+491 -176 V
+490 -287 V
+491 -303 V
+491 -320 V
+490 -389 V
+491 -402 V
+491 -448 V
+490 -416 V
+489 -498 V
+% End plot #54
+% Begin plot #55
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7090 M
+491 -42 V
+491 -10 V
+490 -94 V
+491 -26 V
+490 -43 V
+491 -40 V
+491 -95 V
+490 -194 V
+491 -74 V
+491 -219 V
+490 -164 V
+491 -287 V
+491 -287 V
+490 -345 V
+491 -390 V
+491 -415 V
+490 -481 V
+489 -471 V
+1897 7090 Star
+2388 7048 Star
+2879 7038 Star
+3369 6944 Star
+3860 6918 Star
+4350 6875 Star
+4841 6835 Star
+5332 6740 Star
+5822 6546 Star
+6313 6472 Star
+6804 6253 Star
+7294 6089 Star
+7785 5802 Star
+8276 5515 Star
+8766 5170 Star
+9257 4780 Star
+9748 4365 Star
+10238 3884 Star
+% End plot #55
+% Begin plot #56
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7090 M
+491 -42 V
+491 -10 V
+490 -94 V
+491 -26 V
+490 -43 V
+491 -40 V
+491 -95 V
+490 -194 V
+491 -74 V
+491 -219 V
+490 -164 V
+491 -287 V
+491 -287 V
+490 -345 V
+491 -390 V
+491 -415 V
+490 -481 V
+489 -471 V
+% End plot #56
+% Begin plot #57
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7040 M
+491 15 V
+491 -51 V
+490 -43 V
+491 -36 V
+490 -68 V
+491 -38 V
+491 -124 V
+490 -86 V
+491 -172 V
+491 -145 V
+490 -209 V
+491 -256 V
+491 -323 V
+490 -313 V
+491 -421 V
+491 -419 V
+490 -424 V
+489 -523 V
+1897 7040 Star
+2388 7055 Star
+2879 7004 Star
+3369 6961 Star
+3860 6925 Star
+4350 6857 Star
+4841 6819 Star
+5332 6695 Star
+5822 6609 Star
+6313 6437 Star
+6804 6292 Star
+7294 6083 Star
+7785 5827 Star
+8276 5504 Star
+8766 5191 Star
+9257 4770 Star
+9748 4351 Star
+10238 3927 Star
+% End plot #57
+% Begin plot #58
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7059 M
+491 -50 V
+491 -31 V
+490 -48 V
+491 -49 V
+490 -60 V
+491 -72 V
+491 -127 V
+490 -129 V
+491 -188 V
+491 -209 V
+490 -264 V
+491 -308 V
+491 -370 V
+490 -331 V
+491 -474 V
+491 -418 V
+490 -430 V
+489 -449 V
+% End plot #58
+% Begin plot #59
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7040 M
+491 6 V
+491 -34 V
+490 -56 V
+491 -64 V
+490 -5 V
+491 -60 V
+491 -141 V
+490 -78 V
+491 -147 V
+491 -163 V
+490 -222 V
+491 -272 V
+491 -280 V
+490 -341 V
+491 -389 V
+491 -457 V
+490 -465 V
+489 -455 V
+1897 7040 Star
+2388 7046 Star
+2879 7012 Star
+3369 6956 Star
+3860 6892 Star
+4350 6887 Star
+4841 6827 Star
+5332 6686 Star
+5822 6608 Star
+6313 6461 Star
+6804 6298 Star
+7294 6076 Star
+7785 5804 Star
+8276 5524 Star
+8766 5183 Star
+9257 4794 Star
+9748 4337 Star
+10238 3872 Star
+% End plot #59
+% Begin plot #60
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 6996 M
+491 -33 V
+491 -52 V
+490 -68 V
+491 -71 V
+490 -56 V
+491 -109 V
+491 -198 V
+490 -204 V
+491 -224 V
+491 -235 V
+490 -321 V
+491 -342 V
+491 -288 V
+490 -276 V
+491 -397 V
+491 -393 V
+490 -357 V
+489 -320 V
+% End plot #60
+% Begin plot #61
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7039 M
+491 3 V
+491 -29 V
+490 -38 V
+491 -60 V
+490 -17 V
+491 -100 V
+491 -107 V
+490 -102 V
+491 -123 V
+491 -170 V
+490 -225 V
+491 -244 V
+491 -304 V
+490 -341 V
+491 -396 V
+491 -448 V
+490 -454 V
+489 -445 V
+1897 7039 Star
+2388 7042 Star
+2879 7013 Star
+3369 6975 Star
+3860 6915 Star
+4350 6898 Star
+4841 6798 Star
+5332 6691 Star
+5822 6589 Star
+6313 6466 Star
+6804 6296 Star
+7294 6071 Star
+7785 5827 Star
+8276 5523 Star
+8766 5182 Star
+9257 4786 Star
+9748 4338 Star
+10238 3884 Star
+% End plot #61
+% Begin plot #62
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 6908 M
+491 -20 V
+491 -43 V
+490 -85 V
+491 -87 V
+490 -132 V
+491 -215 V
+491 -271 V
+490 -293 V
+491 -286 V
+491 -269 V
+490 -313 V
+491 -279 V
+491 -307 V
+490 -296 V
+491 -304 V
+491 -279 V
+490 -316 V
+489 -327 V
+% End plot #62
+% Begin plot #63
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7064 M
+491 -32 V
+491 -4 V
+490 -74 V
+491 -36 V
+490 -70 V
+491 -45 V
+491 -69 V
+490 -143 V
+491 -113 V
+491 -229 V
+490 -172 V
+491 -239 V
+491 -315 V
+490 -357 V
+491 -377 V
+491 -463 V
+490 -428 V
+489 -457 V
+1897 7064 Star
+2388 7032 Star
+2879 7028 Star
+3369 6954 Star
+3860 6918 Star
+4350 6848 Star
+4841 6803 Star
+5332 6734 Star
+5822 6591 Star
+6313 6478 Star
+6804 6249 Star
+7294 6077 Star
+7785 5838 Star
+8276 5523 Star
+8766 5166 Star
+9257 4789 Star
+9748 4326 Star
+10238 3898 Star
+% End plot #63
+% Begin plot #64
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 6886 M
+491 5 V
+491 -59 V
+490 -86 V
+491 -117 V
+490 -190 V
+491 -119 V
+491 -267 V
+490 -320 V
+491 -264 V
+491 -319 V
+490 -338 V
+491 -332 V
+491 -246 V
+490 -314 V
+491 -222 V
+491 -278 V
+490 -286 V
+489 -333 V
+% End plot #64
+% Begin plot #65
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7081 M
+491 -29 V
+491 -49 V
+490 -37 V
+491 -61 V
+490 -32 V
+491 -42 V
+491 -140 V
+490 -79 V
+491 -161 V
+491 -185 V
+490 -202 V
+491 -267 V
+491 -279 V
+490 -338 V
+491 -395 V
+491 -430 V
+490 -496 V
+489 -455 V
+1897 7081 Star
+2388 7052 Star
+2879 7003 Star
+3369 6966 Star
+3860 6905 Star
+4350 6873 Star
+4841 6831 Star
+5332 6691 Star
+5822 6612 Star
+6313 6451 Star
+6804 6266 Star
+7294 6064 Star
+7785 5797 Star
+8276 5518 Star
+8766 5180 Star
+9257 4785 Star
+9748 4355 Star
+10238 3859 Star
+% End plot #65
+% Begin plot #66
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7033 M
+491 -57 V
+491 -51 V
+490 -52 V
+491 -55 V
+490 -94 V
+491 -50 V
+491 -210 V
+490 -170 V
+491 -241 V
+491 -260 V
+490 -255 V
+491 -301 V
+491 -323 V
+490 -329 V
+491 -402 V
+491 -418 V
+490 -381 V
+489 -323 V
+% End plot #66
+% Begin plot #67
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7107 M
+491 -51 V
+491 -44 V
+490 -65 V
+491 -20 V
+490 -66 V
+491 -77 V
+491 -84 V
+490 -90 V
+491 -144 V
+491 -192 V
+490 -199 V
+491 -274 V
+491 -294 V
+490 -367 V
+491 -345 V
+491 -425 V
+490 -448 V
+489 -494 V
+1897 7107 Star
+2388 7056 Star
+2879 7012 Star
+3369 6947 Star
+3860 6927 Star
+4350 6861 Star
+4841 6784 Star
+5332 6700 Star
+5822 6610 Star
+6313 6466 Star
+6804 6274 Star
+7294 6075 Star
+7785 5801 Star
+8276 5507 Star
+8766 5140 Star
+9257 4795 Star
+9748 4370 Star
+10238 3922 Star
+% End plot #67
+% Begin plot #68
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 6973 M
+491 -38 V
+491 -44 V
+490 -63 V
+491 -93 V
+490 -107 V
+491 -183 V
+491 -200 V
+490 -136 V
+491 -287 V
+491 -309 V
+490 -291 V
+491 -294 V
+491 -301 V
+490 -390 V
+491 -274 V
+491 -299 V
+490 -353 V
+489 -331 V
+% End plot #68
+% Begin plot #69
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7070 M
+491 -29 V
+491 -34 V
+490 -18 V
+491 -69 V
+490 -42 V
+491 -91 V
+491 -98 V
+490 -70 V
+491 -149 V
+491 -216 V
+490 -184 V
+491 -250 V
+491 -297 V
+490 -331 V
+491 -403 V
+491 -423 V
+490 -473 V
+489 -463 V
+1897 7070 Star
+2388 7041 Star
+2879 7007 Star
+3369 6989 Star
+3860 6920 Star
+4350 6878 Star
+4841 6787 Star
+5332 6689 Star
+5822 6619 Star
+6313 6470 Star
+6804 6254 Star
+7294 6070 Star
+7785 5820 Star
+8276 5523 Star
+8766 5192 Star
+9257 4789 Star
+9748 4366 Star
+10238 3893 Star
+% End plot #69
+% Begin plot #70
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7070 M
+491 -29 V
+491 -34 V
+490 -18 V
+491 -69 V
+490 -42 V
+491 -91 V
+491 -98 V
+490 -70 V
+491 -149 V
+491 -216 V
+490 -184 V
+491 -250 V
+491 -297 V
+490 -331 V
+491 -403 V
+491 -423 V
+490 -473 V
+489 -463 V
+% End plot #70
+% Begin plot #71
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7092 M
+491 -29 V
+491 -46 V
+490 -59 V
+491 -30 V
+490 -43 V
+491 -62 V
+491 -128 V
+490 -100 V
+491 -140 V
+491 -162 V
+490 -204 V
+491 -280 V
+491 -280 V
+490 -351 V
+491 -385 V
+491 -447 V
+490 -473 V
+489 -468 V
+1897 7092 Star
+2388 7063 Star
+2879 7017 Star
+3369 6958 Star
+3860 6928 Star
+4350 6885 Star
+4841 6823 Star
+5332 6695 Star
+5822 6595 Star
+6313 6455 Star
+6804 6293 Star
+7294 6089 Star
+7785 5809 Star
+8276 5529 Star
+8766 5178 Star
+9257 4793 Star
+9748 4346 Star
+10238 3873 Star
+% End plot #71
+% Begin plot #72
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7092 M
+491 -29 V
+491 -46 V
+490 -59 V
+491 -30 V
+490 -46 V
+491 -58 V
+491 -127 V
+490 -103 V
+491 -140 V
+491 -174 V
+490 -203 V
+491 -279 V
+491 -292 V
+490 -349 V
+491 -387 V
+491 -444 V
+490 -489 V
+489 -445 V
+% End plot #72
+% Begin plot #73
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7081 M
+491 -38 V
+491 -42 V
+490 -38 V
+491 -62 V
+490 -57 V
+491 -26 V
+491 -108 V
+490 -113 V
+491 -134 V
+491 -207 V
+490 -167 V
+491 -243 V
+491 -334 V
+490 -342 V
+491 -400 V
+491 -426 V
+490 -442 V
+489 -476 V
+1897 7081 Star
+2388 7043 Star
+2879 7001 Star
+3369 6963 Star
+3860 6901 Star
+4350 6844 Star
+4841 6818 Star
+5332 6710 Star
+5822 6597 Star
+6313 6463 Star
+6804 6256 Star
+7294 6089 Star
+7785 5846 Star
+8276 5512 Star
+8766 5170 Star
+9257 4770 Star
+9748 4344 Star
+10238 3902 Star
+% End plot #73
+% Begin plot #74
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 7023 M
+491 3 V
+491 -53 V
+490 -52 V
+491 -63 V
+490 -48 V
+491 -60 V
+491 -124 V
+490 -142 V
+491 -157 V
+491 -267 V
+490 -236 V
+491 -300 V
+491 -378 V
+490 -374 V
+491 -420 V
+491 -441 V
+490 -385 V
+489 -450 V
+% End plot #74
+% Begin plot #75
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7081 M
+491 -22 V
+491 -43 V
+490 -61 V
+491 -40 V
+490 -54 V
+491 -80 V
+491 -77 V
+490 -86 V
+491 -163 V
+491 -174 V
+490 -205 V
+491 -279 V
+491 -284 V
+490 -344 V
+491 -406 V
+491 -426 V
+490 -412 V
+489 -542 V
+1897 7081 Star
+2388 7059 Star
+2879 7016 Star
+3369 6955 Star
+3860 6915 Star
+4350 6861 Star
+4841 6781 Star
+5332 6704 Star
+5822 6618 Star
+6313 6455 Star
+6804 6281 Star
+7294 6076 Star
+7785 5797 Star
+8276 5513 Star
+8766 5169 Star
+9257 4763 Star
+9748 4337 Star
+10238 3925 Star
+% End plot #75
+% Begin plot #76
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 6980 M
+491 -10 V
+491 -60 V
+490 -66 V
+491 -67 V
+490 -92 V
+491 -159 V
+491 -143 V
+490 -176 V
+491 -268 V
+491 -342 V
+490 -211 V
+491 -312 V
+491 -343 V
+490 -308 V
+491 -366 V
+491 -345 V
+490 -366 V
+489 -349 V
+% End plot #76
+% Begin plot #77
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7031 M
+491 17 V
+491 -37 V
+490 -44 V
+491 -54 V
+490 -45 V
+491 -73 V
+491 -148 V
+490 -49 V
+491 -149 V
+491 -177 V
+490 -178 V
+491 -254 V
+491 -313 V
+490 -383 V
+491 -368 V
+491 -415 V
+490 -462 V
+489 -459 V
+1897 7031 Star
+2388 7048 Star
+2879 7011 Star
+3369 6967 Star
+3860 6913 Star
+4350 6868 Star
+4841 6795 Star
+5332 6647 Star
+5822 6598 Star
+6313 6449 Star
+6804 6272 Star
+7294 6094 Star
+7785 5840 Star
+8276 5527 Star
+8766 5144 Star
+9257 4776 Star
+9748 4361 Star
+10238 3899 Star
+% End plot #77
+% Begin plot #78
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 7033 M
+491 15 V
+491 -33 V
+490 -47 V
+491 -48 V
+490 -59 V
+491 -67 V
+491 -163 V
+490 -67 V
+491 -164 V
+491 -203 V
+490 -207 V
+491 -282 V
+491 -321 V
+490 -406 V
+491 -337 V
+491 -433 V
+490 -456 V
+489 -456 V
+% End plot #78
+% Begin plot #79
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7081 M
+491 -31 V
+491 -38 V
+490 -44 V
+491 -51 V
+490 -51 V
+491 -53 V
+491 -120 V
+490 -98 V
+491 -134 V
+491 -167 V
+490 -219 V
+491 -239 V
+491 -313 V
+490 -367 V
+491 -369 V
+491 -425 V
+490 -451 V
+489 -467 V
+1897 7081 Star
+2388 7050 Star
+2879 7012 Star
+3369 6968 Star
+3860 6917 Star
+4350 6866 Star
+4841 6813 Star
+5332 6693 Star
+5822 6595 Star
+6313 6461 Star
+6804 6294 Star
+7294 6075 Star
+7785 5836 Star
+8276 5523 Star
+8766 5156 Star
+9257 4787 Star
+9748 4362 Star
+10238 3911 Star
+% End plot #79
+% Begin plot #80
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7099 M
+491 -58 V
+491 -59 V
+490 -44 V
+491 -50 V
+490 -83 V
+491 -66 V
+491 -81 V
+490 -144 V
+491 -171 V
+491 -215 V
+490 -265 V
+491 -298 V
+491 -353 V
+490 -426 V
+491 -358 V
+491 -492 V
+490 -380 V
+489 -430 V
+% End plot #80
+% Begin plot #81
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7070 M
+491 -12 V
+491 -52 V
+490 -43 V
+491 -45 V
+490 -72 V
+491 -72 V
+491 -67 V
+490 -116 V
+491 -131 V
+491 -170 V
+490 -218 V
+491 -256 V
+491 -277 V
+490 -401 V
+491 -359 V
+491 -422 V
+490 -480 V
+489 -453 V
+1897 7070 Star
+2388 7058 Star
+2879 7006 Star
+3369 6963 Star
+3860 6918 Star
+4350 6846 Star
+4841 6774 Star
+5332 6707 Star
+5822 6591 Star
+6313 6460 Star
+6804 6290 Star
+7294 6072 Star
+7785 5816 Star
+8276 5539 Star
+8766 5138 Star
+9257 4779 Star
+9748 4357 Star
+10238 3877 Star
+% End plot #81
+% Begin plot #82
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 6981 M
+491 -47 V
+491 -63 V
+490 -67 V
+491 -61 V
+490 -175 V
+491 -157 V
+491 -157 V
+490 -205 V
+491 -283 V
+491 -291 V
+490 -308 V
+491 -388 V
+491 -192 V
+490 -319 V
+491 -336 V
+491 -300 V
+490 -377 V
+489 -368 V
+% End plot #82
+% Begin plot #83
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7107 M
+491 -66 V
+491 -27 V
+490 -55 V
+491 -63 V
+490 -22 V
+491 -74 V
+491 -101 V
+490 -102 V
+491 -139 V
+491 -150 V
+490 -221 V
+491 -284 V
+491 -291 V
+490 -331 V
+491 -423 V
+491 -397 V
+490 -443 V
+489 -484 V
+1897 7107 Star
+2388 7041 Star
+2879 7014 Star
+3369 6959 Star
+3860 6896 Star
+4350 6874 Star
+4841 6800 Star
+5332 6699 Star
+5822 6597 Star
+6313 6458 Star
+6804 6308 Star
+7294 6087 Star
+7785 5803 Star
+8276 5512 Star
+8766 5181 Star
+9257 4758 Star
+9748 4361 Star
+10238 3918 Star
+% End plot #83
+% Begin plot #84
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7107 M
+491 -66 V
+491 -27 V
+490 -55 V
+491 -63 V
+490 -22 V
+491 -74 V
+491 -101 V
+490 -102 V
+491 -139 V
+491 -150 V
+490 -221 V
+491 -284 V
+491 -291 V
+490 -331 V
+491 -423 V
+491 -397 V
+490 -443 V
+489 -484 V
+% End plot #84
+% Begin plot #85
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7091 M
+491 -35 V
+491 -52 V
+490 -32 V
+491 -69 V
+490 -30 V
+491 -67 V
+491 -119 V
+490 -69 V
+491 -149 V
+491 -203 V
+490 -185 V
+491 -273 V
+491 -293 V
+490 -340 V
+491 -386 V
+491 -409 V
+490 -475 V
+489 -489 V
+1897 7091 Star
+2388 7056 Star
+2879 7004 Star
+3369 6972 Star
+3860 6903 Star
+4350 6873 Star
+4841 6806 Star
+5332 6687 Star
+5822 6618 Star
+6313 6469 Star
+6804 6266 Star
+7294 6081 Star
+7785 5808 Star
+8276 5515 Star
+8766 5175 Star
+9257 4789 Star
+9748 4380 Star
+10238 3905 Star
+% End plot #85
+% Begin plot #86
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7091 M
+491 -35 V
+491 -52 V
+490 -32 V
+491 -69 V
+490 -29 V
+491 -68 V
+491 -121 V
+490 -68 V
+491 -150 V
+491 -204 V
+490 -189 V
+491 -281 V
+491 -293 V
+490 -350 V
+491 -383 V
+491 -408 V
+490 -458 V
+489 -491 V
+% End plot #86
+% Begin plot #87
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7058 M
+491 7 V
+491 -55 V
+490 -33 V
+491 -59 V
+490 -42 V
+491 -80 V
+491 -107 V
+490 -81 V
+491 -154 V
+491 -157 V
+490 -230 V
+491 -280 V
+491 -269 V
+490 -373 V
+491 -372 V
+491 -410 V
+490 -443 V
+489 -494 V
+1897 7058 Star
+2388 7065 Star
+2879 7010 Star
+3369 6977 Star
+3860 6918 Star
+4350 6876 Star
+4841 6796 Star
+5332 6689 Star
+5822 6608 Star
+6313 6454 Star
+6804 6297 Star
+7294 6067 Star
+7785 5787 Star
+8276 5518 Star
+8766 5145 Star
+9257 4773 Star
+9748 4363 Star
+10238 3920 Star
+% End plot #87
+% Begin plot #88
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 7019 M
+491 -11 V
+491 -56 V
+490 -41 V
+491 -74 V
+490 -53 V
+491 -101 V
+491 -162 V
+490 -136 V
+491 -230 V
+491 -242 V
+490 -281 V
+491 -311 V
+491 -318 V
+490 -347 V
+491 -368 V
+491 -374 V
+490 -408 V
+489 -363 V
+% End plot #88
+% Begin plot #89
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7089 M
+491 -56 V
+491 -51 V
+490 -22 V
+491 -42 V
+490 -44 V
+491 -87 V
+491 -87 V
+490 -113 V
+491 -117 V
+491 -184 V
+490 -206 V
+491 -237 V
+491 -320 V
+490 -335 V
+491 -401 V
+491 -427 V
+490 -476 V
+489 -488 V
+1897 7089 Star
+2388 7033 Star
+2879 6982 Star
+3369 6960 Star
+3860 6918 Star
+4350 6874 Star
+4841 6787 Star
+5332 6700 Star
+5822 6587 Star
+6313 6470 Star
+6804 6286 Star
+7294 6080 Star
+7785 5843 Star
+8276 5523 Star
+8766 5188 Star
+9257 4787 Star
+9748 4360 Star
+10238 3884 Star
+% End plot #89
+% Begin plot #90
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7089 M
+491 -56 V
+491 -51 V
+490 -22 V
+491 -42 V
+490 -44 V
+491 -87 V
+491 -87 V
+490 -113 V
+491 -117 V
+491 -184 V
+490 -206 V
+491 -237 V
+491 -320 V
+490 -335 V
+491 -401 V
+491 -427 V
+490 -476 V
+489 -488 V
+% End plot #90
+% Begin plot #91
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7052 M
+491 13 V
+491 -49 V
+490 -51 V
+491 -46 V
+490 -97 V
+491 -37 V
+491 -73 V
+490 -122 V
+491 -116 V
+491 -189 V
+490 -196 V
+491 -260 V
+491 -305 V
+490 -334 V
+491 -401 V
+491 -456 V
+490 -445 V
+489 -458 V
+1897 7052 Star
+2388 7065 Star
+2879 7016 Star
+3369 6965 Star
+3860 6919 Star
+4350 6822 Star
+4841 6785 Star
+5332 6712 Star
+5822 6590 Star
+6313 6474 Star
+6804 6285 Star
+7294 6089 Star
+7785 5829 Star
+8276 5524 Star
+8766 5190 Star
+9257 4789 Star
+9748 4333 Star
+10238 3888 Star
+% End plot #91
+% Begin plot #92
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 7070 M
+491 -48 V
+491 -53 V
+490 -42 V
+491 -57 V
+490 -106 V
+491 -58 V
+491 -81 V
+490 -157 V
+491 -171 V
+491 -250 V
+490 -243 V
+491 -279 V
+491 -393 V
+490 -398 V
+491 -389 V
+491 -409 V
+490 -456 V
+489 -385 V
+% End plot #92
+% Begin plot #93
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7078 M
+491 -23 V
+491 -38 V
+490 -53 V
+491 -40 V
+490 -48 V
+491 -45 V
+491 -132 V
+490 -104 V
+491 -140 V
+491 -189 V
+490 -207 V
+491 -251 V
+491 -306 V
+490 -350 V
+491 -382 V
+491 -447 V
+490 -407 V
+489 -493 V
+1897 7078 Star
+2388 7055 Star
+2879 7017 Star
+3369 6964 Star
+3860 6924 Star
+4350 6876 Star
+4841 6831 Star
+5332 6699 Star
+5822 6595 Star
+6313 6455 Star
+6804 6266 Star
+7294 6059 Star
+7785 5808 Star
+8276 5502 Star
+8766 5152 Star
+9257 4770 Star
+9748 4323 Star
+10238 3916 Star
+% End plot #93
+% Begin plot #94
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7078 M
+491 -23 V
+491 -38 V
+490 -53 V
+491 -40 V
+490 -48 V
+491 -45 V
+491 -132 V
+490 -104 V
+491 -140 V
+491 -190 V
+490 -206 V
+491 -252 V
+491 -308 V
+490 -348 V
+491 -382 V
+491 -450 V
+490 -407 V
+489 -490 V
+% End plot #94
+% Begin plot #95
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7060 M
+491 -9 V
+491 -58 V
+490 -48 V
+491 -36 V
+490 -14 V
+491 -89 V
+491 -108 V
+490 -93 V
+491 -120 V
+491 -188 V
+490 -217 V
+491 -239 V
+491 -323 V
+490 -339 V
+491 -377 V
+491 -462 V
+490 -436 V
+489 -497 V
+1897 7060 Star
+2388 7051 Star
+2879 6993 Star
+3369 6945 Star
+3860 6909 Star
+4350 6895 Star
+4841 6806 Star
+5332 6698 Star
+5822 6605 Star
+6313 6485 Star
+6804 6297 Star
+7294 6080 Star
+7785 5841 Star
+8276 5518 Star
+8766 5179 Star
+9257 4802 Star
+9748 4340 Star
+10238 3904 Star
+% End plot #95
+% Begin plot #96
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 6999 M
+491 -17 V
+491 -44 V
+490 -61 V
+491 -52 V
+490 -58 V
+491 -75 V
+491 -174 V
+490 -151 V
+491 -206 V
+491 -274 V
+490 -256 V
+491 -272 V
+491 -367 V
+490 -345 V
+491 -379 V
+491 -388 V
+490 -396 V
+489 -371 V
+% End plot #96
+% Begin plot #97
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7070 M
+491 -19 V
+491 -37 V
+490 -54 V
+491 -46 V
+490 -76 V
+491 -55 V
+491 -56 V
+490 -159 V
+491 -99 V
+491 -177 V
+490 -213 V
+491 -268 V
+491 -282 V
+490 -345 V
+491 -409 V
+491 -418 V
+490 -415 V
+489 -525 V
+1897 7070 Star
+2388 7051 Star
+2879 7014 Star
+3369 6960 Star
+3860 6914 Star
+4350 6838 Star
+4841 6783 Star
+5332 6727 Star
+5822 6568 Star
+6313 6469 Star
+6804 6292 Star
+7294 6079 Star
+7785 5811 Star
+8276 5529 Star
+8766 5184 Star
+9257 4775 Star
+9748 4357 Star
+10238 3942 Star
+% End plot #97
+% Begin plot #98
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7007 M
+491 -61 V
+491 -52 V
+490 -72 V
+491 -74 V
+490 -93 V
+491 -151 V
+491 -154 V
+490 -256 V
+491 -211 V
+491 -291 V
+490 -260 V
+491 -354 V
+491 -276 V
+490 -364 V
+491 -296 V
+491 -350 V
+490 -349 V
+489 -339 V
+% End plot #98
+% Begin plot #99
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7068 M
+491 -19 V
+491 -40 V
+490 -30 V
+491 -55 V
+490 -47 V
+491 -91 V
+491 -87 V
+490 -108 V
+491 -152 V
+491 -142 V
+490 -222 V
+491 -236 V
+491 -312 V
+490 -369 V
+491 -371 V
+491 -438 V
+490 -459 V
+489 -463 V
+1897 7068 Star
+2388 7049 Star
+2879 7009 Star
+3369 6979 Star
+3860 6924 Star
+4350 6877 Star
+4841 6786 Star
+5332 6699 Star
+5822 6591 Star
+6313 6439 Star
+6804 6297 Star
+7294 6075 Star
+7785 5839 Star
+8276 5527 Star
+8766 5158 Star
+9257 4787 Star
+9748 4349 Star
+10238 3890 Star
+% End plot #99
+% Begin plot #100
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7068 M
+491 -19 V
+491 -40 V
+490 -30 V
+491 -55 V
+490 -47 V
+491 -91 V
+491 -87 V
+490 -108 V
+491 -152 V
+491 -142 V
+490 -222 V
+491 -236 V
+491 -312 V
+490 -369 V
+491 -371 V
+491 -438 V
+490 -459 V
+489 -463 V
+% End plot #100
+% Begin plot #101
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7111 M
+491 -54 V
+491 -47 V
+490 -35 V
+491 -58 V
+490 -65 V
+491 -79 V
+491 -56 V
+490 -106 V
+491 -155 V
+491 -137 V
+490 -239 V
+491 -269 V
+491 -275 V
+490 -398 V
+491 -361 V
+491 -418 V
+490 -485 V
+489 -474 V
+1897 7111 Star
+2388 7057 Star
+2879 7010 Star
+3369 6975 Star
+3860 6917 Star
+4350 6852 Star
+4841 6773 Star
+5332 6717 Star
+5822 6611 Star
+6313 6456 Star
+6804 6319 Star
+7294 6080 Star
+7785 5811 Star
+8276 5536 Star
+8766 5138 Star
+9257 4777 Star
+9748 4359 Star
+10238 3874 Star
+% End plot #101
+% Begin plot #102
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 7072 M
+491 -32 V
+491 -53 V
+490 -36 V
+491 -75 V
+490 -74 V
+491 -58 V
+491 -84 V
+490 -132 V
+491 -183 V
+491 -171 V
+490 -286 V
+491 -319 V
+491 -311 V
+490 -421 V
+491 -427 V
+491 -429 V
+490 -501 V
+489 -425 V
+% End plot #102
+% Begin plot #103
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7134 M
+491 -93 V
+491 -27 V
+490 -46 V
+491 -58 V
+490 -38 V
+491 -88 V
+491 -88 V
+490 -118 V
+491 -132 V
+491 -182 V
+490 -186 V
+491 -263 V
+491 -298 V
+490 -393 V
+491 -369 V
+491 -415 V
+490 -407 V
+489 -494 V
+1897 7134 Star
+2388 7041 Star
+2879 7014 Star
+3369 6968 Star
+3860 6910 Star
+4350 6872 Star
+4841 6784 Star
+5332 6696 Star
+5822 6578 Star
+6313 6446 Star
+6804 6264 Star
+7294 6078 Star
+7785 5815 Star
+8276 5517 Star
+8766 5124 Star
+9257 4755 Star
+9748 4340 Star
+10238 3933 Star
+% End plot #103
+% Begin plot #104
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7041 M
+491 -63 V
+491 -37 V
+490 -68 V
+491 -72 V
+490 -49 V
+491 -162 V
+491 -139 V
+490 -205 V
+491 -201 V
+491 -253 V
+490 -250 V
+491 -305 V
+491 -333 V
+490 -352 V
+491 -348 V
+491 -385 V
+490 -340 V
+489 -415 V
+% End plot #104
+% Begin plot #105
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7013 M
+491 44 V
+491 -44 V
+490 -39 V
+491 -55 V
+490 -46 V
+491 -94 V
+491 -63 V
+490 -114 V
+491 -132 V
+491 -151 V
+490 -236 V
+491 -261 V
+491 -290 V
+490 -353 V
+491 -410 V
+491 -433 V
+490 -425 V
+489 -483 V
+1897 7013 Star
+2388 7057 Star
+2879 7013 Star
+3369 6974 Star
+3860 6919 Star
+4350 6873 Star
+4841 6779 Star
+5332 6716 Star
+5822 6602 Star
+6313 6470 Star
+6804 6319 Star
+7294 6083 Star
+7785 5822 Star
+8276 5532 Star
+8766 5179 Star
+9257 4769 Star
+9748 4336 Star
+10238 3911 Star
+% End plot #105
+% Begin plot #106
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 7018 M
+491 30 V
+491 -38 V
+490 -50 V
+491 -47 V
+490 -73 V
+491 -80 V
+491 -80 V
+490 -134 V
+491 -150 V
+491 -185 V
+490 -264 V
+491 -302 V
+491 -319 V
+490 -352 V
+491 -441 V
+491 -432 V
+490 -417 V
+489 -499 V
+% End plot #106
+% Begin plot #107
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7072 M
+491 -27 V
+491 -20 V
+490 -50 V
+491 -58 V
+490 -12 V
+491 -146 V
+491 -50 V
+490 -113 V
+491 -110 V
+491 -181 V
+490 -234 V
+491 -259 V
+491 -292 V
+490 -338 V
+491 -417 V
+491 -410 V
+490 -448 V
+489 -509 V
+1897 7072 Star
+2388 7045 Star
+2879 7025 Star
+3369 6975 Star
+3860 6917 Star
+4350 6905 Star
+4841 6759 Star
+5332 6709 Star
+5822 6596 Star
+6313 6486 Star
+6804 6305 Star
+7294 6071 Star
+7785 5812 Star
+8276 5520 Star
+8766 5182 Star
+9257 4765 Star
+9748 4355 Star
+10238 3907 Star
+% End plot #107
+% Begin plot #108
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7021 M
+491 5 V
+491 -29 V
+490 -61 V
+491 -53 V
+490 -37 V
+491 -113 V
+491 -100 V
+490 -132 V
+491 -136 V
+491 -215 V
+490 -303 V
+491 -295 V
+491 -349 V
+490 -365 V
+491 -453 V
+491 -443 V
+490 -433 V
+489 -433 V
+% End plot #108
+% Begin plot #109
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7128 M
+491 -74 V
+491 -57 V
+490 -32 V
+491 -54 V
+490 -64 V
+491 -72 V
+491 -95 V
+490 -57 V
+491 -167 V
+491 -170 V
+490 -200 V
+491 -271 V
+491 -295 V
+490 -350 V
+491 -388 V
+491 -431 V
+490 -457 V
+489 -478 V
+1897 7128 Star
+2388 7054 Star
+2879 6997 Star
+3369 6965 Star
+3860 6911 Star
+4350 6847 Star
+4841 6775 Star
+5332 6680 Star
+5822 6623 Star
+6313 6456 Star
+6804 6286 Star
+7294 6086 Star
+7785 5815 Star
+8276 5520 Star
+8766 5170 Star
+9257 4782 Star
+9748 4351 Star
+10238 3894 Star
+% End plot #109
+% Begin plot #110
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7083 M
+491 -48 V
+491 -61 V
+490 -20 V
+491 -79 V
+490 -65 V
+491 -88 V
+491 -89 V
+490 -95 V
+491 -192 V
+491 -216 V
+490 -240 V
+491 -328 V
+491 -312 V
+490 -404 V
+491 -420 V
+491 -458 V
+490 -412 V
+489 -474 V
+% End plot #110
+% Begin plot #111
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7062 M
+491 -13 V
+491 -41 V
+490 -44 V
+491 -33 V
+490 -108 V
+491 -54 V
+491 -54 V
+490 -107 V
+491 -144 V
+491 -166 V
+490 -218 V
+491 -238 V
+491 -317 V
+490 -333 V
+491 -404 V
+491 -436 V
+490 -472 V
+489 -433 V
+1897 7062 Star
+2388 7049 Star
+2879 7008 Star
+3369 6964 Star
+3860 6931 Star
+4350 6823 Star
+4841 6769 Star
+5332 6715 Star
+5822 6608 Star
+6313 6464 Star
+6804 6298 Star
+7294 6080 Star
+7785 5842 Star
+8276 5525 Star
+8766 5192 Star
+9257 4788 Star
+9748 4352 Star
+10238 3880 Star
+% End plot #111
+% Begin plot #112
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 6984 M
+491 2 V
+491 -43 V
+490 -68 V
+491 -43 V
+490 -121 V
+491 -74 V
+491 -148 V
+490 -172 V
+491 -240 V
+491 -221 V
+490 -277 V
+491 -255 V
+491 -381 V
+490 -323 V
+491 -416 V
+491 -372 V
+490 -389 V
+489 -298 V
+% End plot #112
+% Begin plot #113
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7078 M
+491 -31 V
+491 -39 V
+490 -30 V
+491 -48 V
+490 -104 V
+491 -50 V
+491 -45 V
+490 -144 V
+491 -124 V
+491 -181 V
+490 -203 V
+491 -250 V
+491 -311 V
+490 -386 V
+491 -361 V
+491 -420 V
+490 -477 V
+489 -431 V
+1897 7078 Star
+2388 7047 Star
+2879 7008 Star
+3369 6978 Star
+3860 6930 Star
+4350 6826 Star
+4841 6776 Star
+5332 6731 Star
+5822 6587 Star
+6313 6463 Star
+6804 6282 Star
+7294 6079 Star
+7785 5829 Star
+8276 5518 Star
+8766 5132 Star
+9257 4771 Star
+9748 4351 Star
+10238 3874 Star
+% End plot #113
+% Begin plot #114
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7017 M
+491 -53 V
+491 -63 V
+490 -29 V
+491 -87 V
+490 -135 V
+491 -85 V
+491 -138 V
+490 -242 V
+491 -214 V
+491 -263 V
+490 -302 V
+491 -306 V
+491 -316 V
+490 -353 V
+491 -348 V
+491 -349 V
+490 -350 V
+489 -328 V
+% End plot #114
+% Begin plot #115
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7143 M
+491 -95 V
+491 -35 V
+490 -42 V
+491 -62 V
+490 -45 V
+491 -59 V
+491 -122 V
+490 -85 V
+491 -127 V
+491 -129 V
+490 -259 V
+491 -252 V
+491 -311 V
+490 -331 V
+491 -408 V
+491 -413 V
+490 -476 V
+489 -482 V
+1897 7143 Star
+2388 7048 Star
+2879 7013 Star
+3369 6971 Star
+3860 6909 Star
+4350 6864 Star
+4841 6805 Star
+5332 6683 Star
+5822 6598 Star
+6313 6471 Star
+6804 6342 Star
+7294 6083 Star
+7785 5831 Star
+8276 5520 Star
+8766 5189 Star
+9257 4781 Star
+9748 4368 Star
+10238 3892 Star
+% End plot #115
+% Begin plot #116
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 6956 M
+491 -100 V
+491 -53 V
+490 -88 V
+491 -127 V
+490 -181 V
+491 -155 V
+491 -311 V
+490 -411 V
+491 -249 V
+491 -243 V
+490 -363 V
+491 -223 V
+491 -332 V
+490 -178 V
+491 -369 V
+491 -240 V
+490 -231 V
+489 -427 V
+% End plot #116
+% Begin plot #117
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7089 M
+491 -49 V
+491 -46 V
+490 -29 V
+491 -61 V
+490 -25 V
+491 -79 V
+491 -95 V
+490 -116 V
+491 -137 V
+491 -163 V
+490 -215 V
+491 -201 V
+491 -366 V
+490 -371 V
+491 -365 V
+491 -420 V
+490 -487 V
+489 -418 V
+1897 7089 Star
+2388 7040 Star
+2879 6994 Star
+3369 6965 Star
+3860 6904 Star
+4350 6879 Star
+4841 6800 Star
+5332 6705 Star
+5822 6589 Star
+6313 6452 Star
+6804 6289 Star
+7294 6074 Star
+7785 5873 Star
+8276 5507 Star
+8766 5136 Star
+9257 4771 Star
+9748 4351 Star
+10238 3864 Star
+% End plot #117
+% Begin plot #118
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7072 M
+491 -32 V
+491 -54 V
+490 -43 V
+491 -54 V
+490 -46 V
+491 -90 V
+491 -97 V
+490 -127 V
+491 -183 V
+491 -196 V
+490 -267 V
+491 -251 V
+491 -424 V
+490 -394 V
+491 -418 V
+491 -422 V
+490 -479 V
+489 -377 V
+% End plot #118
+% Begin plot #119
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7148 M
+491 -110 V
+491 -42 V
+490 -34 V
+491 -51 V
+490 -35 V
+491 -101 V
+491 -63 V
+490 -119 V
+491 -132 V
+491 -198 V
+490 -188 V
+491 -258 V
+491 -295 V
+490 -376 V
+491 -355 V
+491 -448 V
+490 -467 V
+489 -455 V
+1897 7148 Star
+2388 7038 Star
+2879 6996 Star
+3369 6962 Star
+3860 6911 Star
+4350 6876 Star
+4841 6775 Star
+5332 6712 Star
+5822 6593 Star
+6313 6461 Star
+6804 6263 Star
+7294 6075 Star
+7785 5817 Star
+8276 5522 Star
+8766 5146 Star
+9257 4791 Star
+9748 4343 Star
+10238 3876 Star
+% End plot #119
+% Begin plot #120
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 7148 M
+491 -110 V
+491 -42 V
+490 -34 V
+491 -52 V
+490 -34 V
+491 -101 V
+491 -64 V
+490 -117 V
+491 -132 V
+491 -203 V
+490 -193 V
+491 -254 V
+491 -307 V
+490 -386 V
+491 -364 V
+491 -447 V
+490 -456 V
+489 -441 V
+% End plot #120
+% Begin plot #121
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7042 M
+491 5 V
+491 -43 V
+490 -41 V
+491 -55 V
+490 -25 V
+491 -74 V
+491 -110 V
+490 -113 V
+491 -125 V
+491 -151 V
+490 -230 V
+491 -258 V
+491 -293 V
+490 -372 V
+491 -378 V
+491 -440 V
+490 -484 V
+489 -453 V
+1897 7042 Star
+2388 7047 Star
+2879 7004 Star
+3369 6963 Star
+3860 6908 Star
+4350 6883 Star
+4841 6809 Star
+5332 6699 Star
+5822 6586 Star
+6313 6461 Star
+6804 6310 Star
+7294 6080 Star
+7785 5822 Star
+8276 5529 Star
+8766 5157 Star
+9257 4779 Star
+9748 4339 Star
+10238 3855 Star
+% End plot #121
+% Begin plot #122
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7025 M
+491 -43 V
+491 -67 V
+490 -40 V
+491 -77 V
+490 -70 V
+491 -105 V
+491 -195 V
+490 -169 V
+491 -198 V
+491 -252 V
+490 -293 V
+491 -254 V
+491 -369 V
+490 -373 V
+491 -357 V
+491 -361 V
+490 -378 V
+489 -364 V
+% End plot #122
+% Begin plot #123
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7033 M
+491 18 V
+491 -64 V
+490 -14 V
+491 -54 V
+490 -26 V
+491 -100 V
+491 -84 V
+490 -88 V
+491 -149 V
+491 -218 V
+490 -173 V
+491 -258 V
+491 -297 V
+490 -377 V
+491 -378 V
+491 -434 V
+490 -452 V
+489 -455 V
+1897 7033 Star
+2388 7051 Star
+2879 6987 Star
+3369 6973 Star
+3860 6919 Star
+4350 6893 Star
+4841 6793 Star
+5332 6709 Star
+5822 6621 Star
+6313 6472 Star
+6804 6254 Star
+7294 6081 Star
+7785 5823 Star
+8276 5526 Star
+8766 5149 Star
+9257 4771 Star
+9748 4337 Star
+10238 3885 Star
+% End plot #123
+% Begin plot #124
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7031 M
+491 15 V
+491 -57 V
+490 -26 V
+491 -45 V
+490 -37 V
+491 -108 V
+491 -86 V
+490 -138 V
+491 -159 V
+491 -235 V
+490 -203 V
+491 -270 V
+491 -331 V
+490 -364 V
+491 -410 V
+491 -430 V
+490 -436 V
+489 -490 V
+% End plot #124
+% Begin plot #125
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7092 M
+491 -31 V
+491 -68 V
+490 -29 V
+491 -43 V
+490 -17 V
+491 -136 V
+491 -48 V
+490 -125 V
+491 -149 V
+491 -172 V
+490 -197 V
+491 -257 V
+491 -308 V
+490 -341 V
+491 -374 V
+491 -425 V
+490 -508 V
+489 -488 V
+1897 7092 Star
+2388 7061 Star
+2879 6993 Star
+3369 6964 Star
+3860 6921 Star
+4350 6904 Star
+4841 6768 Star
+5332 6720 Star
+5822 6595 Star
+6313 6446 Star
+6804 6274 Star
+7294 6077 Star
+7785 5820 Star
+8276 5512 Star
+8766 5171 Star
+9257 4797 Star
+9748 4372 Star
+10238 3864 Star
+% End plot #125
+% Begin plot #126
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7092 M
+491 -31 V
+491 -68 V
+490 -29 V
+491 -43 V
+490 -17 V
+491 -136 V
+491 -48 V
+490 -125 V
+491 -149 V
+491 -172 V
+490 -197 V
+491 -257 V
+491 -308 V
+490 -341 V
+491 -374 V
+491 -425 V
+490 -508 V
+489 -488 V
+% End plot #126
+% Begin plot #127
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7072 M
+491 -24 V
+491 -51 V
+490 -30 V
+491 -55 V
+490 -57 V
+491 -57 V
+491 -108 V
+490 -79 V
+491 -148 V
+491 -148 V
+490 -232 V
+491 -285 V
+491 -275 V
+490 -309 V
+491 -444 V
+491 -435 V
+490 -434 V
+489 -460 V
+1897 7072 Star
+2388 7048 Star
+2879 6997 Star
+3369 6967 Star
+3860 6912 Star
+4350 6855 Star
+4841 6798 Star
+5332 6690 Star
+5822 6611 Star
+6313 6463 Star
+6804 6315 Star
+7294 6083 Star
+7785 5798 Star
+8276 5523 Star
+8766 5214 Star
+9257 4770 Star
+9748 4335 Star
+10238 3901 Star
+% End plot #127
+% Begin plot #128
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7060 M
+491 -41 V
+491 -61 V
+490 -33 V
+491 -52 V
+490 -60 V
+491 -103 V
+491 -110 V
+490 -137 V
+491 -166 V
+491 -222 V
+490 -294 V
+491 -332 V
+491 -335 V
+490 -327 V
+491 -442 V
+491 -408 V
+490 -461 V
+489 -406 V
+% End plot #128
+% Begin plot #129
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7045 M
+491 10 V
+491 -47 V
+490 -42 V
+491 -51 V
+490 -61 V
+491 -82 V
+491 -55 V
+490 -127 V
+491 -118 V
+491 -183 V
+490 -204 V
+491 -246 V
+491 -321 V
+490 -300 V
+491 -421 V
+491 -454 V
+490 -443 V
+489 -514 V
+1897 7045 Star
+2388 7055 Star
+2879 7008 Star
+3369 6966 Star
+3860 6915 Star
+4350 6854 Star
+4841 6772 Star
+5332 6717 Star
+5822 6590 Star
+6313 6472 Star
+6804 6289 Star
+7294 6085 Star
+7785 5839 Star
+8276 5518 Star
+8766 5218 Star
+9257 4797 Star
+9748 4343 Star
+10238 3900 Star
+% End plot #129
+% Begin plot #130
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 6976 M
+491 -8 V
+491 -61 V
+490 -44 V
+491 -74 V
+490 -94 V
+491 -131 V
+491 -138 V
+490 -213 V
+491 -223 V
+491 -270 V
+490 -266 V
+491 -296 V
+491 -338 V
+490 -270 V
+491 -441 V
+491 -324 V
+490 -344 V
+489 -393 V
+% End plot #130
+% Begin plot #131
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7078 M
+491 -45 V
+491 -19 V
+490 -67 V
+491 -38 V
+490 -28 V
+491 -81 V
+491 -100 V
+490 -124 V
+491 -101 V
+491 -182 V
+490 -203 V
+491 -281 V
+491 -293 V
+490 -344 V
+491 -404 V
+491 -405 V
+490 -505 V
+489 -417 V
+1897 7078 Star
+2388 7033 Star
+2879 7014 Star
+3369 6947 Star
+3860 6909 Star
+4350 6881 Star
+4841 6800 Star
+5332 6700 Star
+5822 6576 Star
+6313 6475 Star
+6804 6293 Star
+7294 6090 Star
+7785 5809 Star
+8276 5516 Star
+8766 5172 Star
+9257 4768 Star
+9748 4363 Star
+10238 3858 Star
+% End plot #131
+% Begin plot #132
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7078 M
+491 -45 V
+491 -19 V
+490 -67 V
+491 -38 V
+490 -28 V
+491 -82 V
+491 -105 V
+490 -116 V
+491 -110 V
+491 -194 V
+490 -205 V
+491 -297 V
+491 -300 V
+490 -354 V
+491 -387 V
+491 -416 V
+490 -485 V
+489 -438 V
+% End plot #132
+% Begin plot #133
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7110 M
+491 -48 V
+491 -59 V
+490 -35 V
+491 -52 V
+490 -39 V
+491 -76 V
+491 -87 V
+490 -143 V
+491 -135 V
+491 -156 V
+490 -184 V
+491 -285 V
+491 -300 V
+490 -305 V
+491 -424 V
+491 -431 V
+490 -457 V
+489 -464 V
+1897 7110 Star
+2388 7062 Star
+2879 7003 Star
+3369 6968 Star
+3860 6916 Star
+4350 6877 Star
+4841 6801 Star
+5332 6714 Star
+5822 6571 Star
+6313 6436 Star
+6804 6280 Star
+7294 6096 Star
+7785 5811 Star
+8276 5511 Star
+8766 5206 Star
+9257 4782 Star
+9748 4351 Star
+10238 3894 Star
+% End plot #133
+% Begin plot #134
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 6931 M
+491 -49 V
+491 -99 V
+490 -58 V
+491 -165 V
+490 -78 V
+491 -282 V
+491 -246 V
+490 -354 V
+491 -301 V
+491 -368 V
+490 -211 V
+491 -360 V
+491 -261 V
+490 -188 V
+491 -297 V
+491 -314 V
+490 -272 V
+489 -267 V
+% End plot #134
+% Begin plot #135
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7102 M
+491 -58 V
+491 -38 V
+490 -18 V
+491 -63 V
+490 -96 V
+491 -23 V
+491 -82 V
+490 -137 V
+491 -110 V
+491 -179 V
+490 -221 V
+491 -258 V
+491 -292 V
+490 -362 V
+491 -386 V
+491 -421 V
+490 -463 V
+489 -452 V
+1897 7102 Star
+2388 7044 Star
+2879 7006 Star
+3369 6988 Star
+3860 6925 Star
+4350 6829 Star
+4841 6806 Star
+5332 6724 Star
+5822 6587 Star
+6313 6477 Star
+6804 6298 Star
+7294 6077 Star
+7785 5819 Star
+8276 5527 Star
+8766 5165 Star
+9257 4779 Star
+9748 4358 Star
+10238 3895 Star
+% End plot #135
+% Begin plot #136
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 6939 M
+491 -80 V
+491 -76 V
+490 -55 V
+491 -152 V
+490 -213 V
+491 -139 V
+491 -296 V
+490 -370 V
+491 -302 V
+491 -322 V
+490 -319 V
+491 -181 V
+491 -327 V
+490 -314 V
+491 -170 V
+491 -296 V
+490 -288 V
+489 -324 V
+% End plot #136
+% Begin plot #137
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7036 M
+491 9 V
+491 -13 V
+490 -66 V
+491 -50 V
+490 -95 V
+491 -54 V
+491 -64 V
+490 -106 V
+491 -131 V
+491 -189 V
+490 -210 V
+491 -241 V
+491 -300 V
+490 -382 V
+491 -390 V
+491 -392 V
+490 -496 V
+489 -455 V
+1897 7036 Star
+2388 7045 Star
+2879 7032 Star
+3369 6966 Star
+3860 6916 Star
+4350 6821 Star
+4841 6767 Star
+5332 6703 Star
+5822 6597 Star
+6313 6466 Star
+6804 6277 Star
+7294 6067 Star
+7785 5826 Star
+8276 5526 Star
+8766 5144 Star
+9257 4754 Star
+9748 4362 Star
+10238 3866 Star
+% End plot #137
+% Begin plot #138
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7074 M
+491 -20 V
+491 -48 V
+490 -64 V
+491 -55 V
+490 -57 V
+491 -82 V
+491 -81 V
+490 -141 V
+491 -155 V
+491 -218 V
+490 -247 V
+491 -290 V
+491 -344 V
+490 -371 V
+491 -434 V
+491 -441 V
+490 -470 V
+489 -419 V
+% End plot #138
+% Begin plot #139
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7086 M
+491 -23 V
+491 -49 V
+490 -33 V
+491 -70 V
+490 -58 V
+491 -75 V
+491 -42 V
+490 -152 V
+491 -103 V
+491 -155 V
+490 -255 V
+491 -254 V
+491 -288 V
+490 -361 V
+491 -393 V
+491 -415 V
+490 -480 V
+489 -449 V
+1897 7086 Star
+2388 7063 Star
+2879 7014 Star
+3369 6981 Star
+3860 6911 Star
+4350 6853 Star
+4841 6778 Star
+5332 6736 Star
+5822 6584 Star
+6313 6481 Star
+6804 6326 Star
+7294 6071 Star
+7785 5817 Star
+8276 5529 Star
+8766 5168 Star
+9257 4775 Star
+9748 4360 Star
+10238 3880 Star
+% End plot #139
+% Begin plot #140
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7078 M
+491 -56 V
+491 -37 V
+490 -59 V
+491 -71 V
+490 -26 V
+491 -100 V
+491 -83 V
+490 -179 V
+491 -135 V
+491 -234 V
+490 -279 V
+491 -334 V
+491 -313 V
+490 -400 V
+491 -416 V
+491 -434 V
+490 -454 V
+489 -438 V
+% End plot #140
+% Begin plot #141
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7124 M
+491 -68 V
+491 -44 V
+490 -55 V
+491 -54 V
+490 -22 V
+491 -81 V
+491 -123 V
+490 -84 V
+491 -125 V
+491 -152 V
+490 -243 V
+491 -248 V
+491 -321 V
+490 -338 V
+491 -396 V
+491 -442 V
+490 -448 V
+489 -467 V
+1897 7124 Star
+2388 7056 Star
+2879 7012 Star
+3369 6957 Star
+3860 6903 Star
+4350 6881 Star
+4841 6800 Star
+5332 6677 Star
+5822 6593 Star
+6313 6468 Star
+6804 6316 Star
+7294 6073 Star
+7785 5825 Star
+8276 5504 Star
+8766 5166 Star
+9257 4770 Star
+9748 4328 Star
+10238 3880 Star
+% End plot #141
+% Begin plot #142
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7004 M
+491 -54 V
+491 -63 V
+490 -68 V
+491 -80 V
+490 -108 V
+491 -102 V
+491 -240 V
+490 -205 V
+491 -223 V
+491 -215 V
+490 -380 V
+491 -306 V
+491 -331 V
+490 -321 V
+491 -300 V
+491 -342 V
+490 -350 V
+489 -346 V
+% End plot #142
+% Begin plot #143
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7069 M
+491 -27 V
+491 -17 V
+490 -63 V
+491 -51 V
+490 -29 V
+491 -93 V
+491 -90 V
+490 -95 V
+491 -141 V
+491 -173 V
+490 -210 V
+491 -254 V
+491 -303 V
+490 -360 V
+491 -377 V
+491 -444 V
+490 -456 V
+489 -506 V
+1897 7069 Star
+2388 7042 Star
+2879 7025 Star
+3369 6962 Star
+3860 6911 Star
+4350 6882 Star
+4841 6789 Star
+5332 6699 Star
+5822 6604 Star
+6313 6463 Star
+6804 6290 Star
+7294 6080 Star
+7785 5826 Star
+8276 5523 Star
+8766 5163 Star
+9257 4786 Star
+9748 4342 Star
+10238 3886 Star
+% End plot #143
+% Begin plot #144
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 7028 M
+491 -66 V
+491 -34 V
+490 -92 V
+491 -58 V
+490 -82 V
+491 -111 V
+491 -170 V
+490 -184 V
+491 -242 V
+491 -256 V
+490 -287 V
+491 -321 V
+491 -326 V
+490 -327 V
+491 -388 V
+491 -324 V
+490 -402 V
+489 -366 V
+% End plot #144
+% Begin plot #145
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7096 M
+491 -34 V
+491 -46 V
+490 -51 V
+491 -39 V
+490 -79 V
+491 -36 V
+491 -131 V
+490 -101 V
+491 -123 V
+491 -154 V
+490 -222 V
+491 -236 V
+491 -332 V
+490 -344 V
+491 -392 V
+491 -423 V
+490 -473 V
+489 -438 V
+1897 7096 Star
+2388 7062 Star
+2879 7016 Star
+3369 6965 Star
+3860 6926 Star
+4350 6847 Star
+4841 6811 Star
+5332 6680 Star
+5822 6579 Star
+6313 6456 Star
+6804 6302 Star
+7294 6080 Star
+7785 5844 Star
+8276 5512 Star
+8766 5168 Star
+9257 4776 Star
+9748 4353 Star
+10238 3880 Star
+% End plot #145
+% Begin plot #146
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7096 M
+491 -34 V
+491 -46 V
+490 -51 V
+491 -38 V
+490 -77 V
+491 -40 V
+491 -126 V
+490 -106 V
+491 -127 V
+491 -150 V
+490 -236 V
+491 -257 V
+491 -323 V
+490 -357 V
+491 -382 V
+491 -438 V
+490 -463 V
+489 -415 V
+% End plot #146
+% Begin plot #147
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7104 M
+491 -54 V
+491 -38 V
+490 -50 V
+491 -44 V
+490 -54 V
+491 -83 V
+491 -58 V
+490 -106 V
+491 -161 V
+491 -164 V
+490 -203 V
+491 -251 V
+491 -312 V
+490 -352 V
+491 -398 V
+491 -427 V
+490 -434 V
+489 -480 V
+1897 7104 Star
+2388 7050 Star
+2879 7012 Star
+3369 6962 Star
+3860 6918 Star
+4350 6864 Star
+4841 6781 Star
+5332 6723 Star
+5822 6617 Star
+6313 6456 Star
+6804 6292 Star
+7294 6089 Star
+7785 5838 Star
+8276 5526 Star
+8766 5174 Star
+9257 4776 Star
+9748 4349 Star
+10238 3915 Star
+% End plot #147
+% Begin plot #148
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 6990 M
+491 -54 V
+491 -51 V
+490 -75 V
+491 -78 V
+490 -124 V
+491 -129 V
+491 -178 V
+490 -210 V
+491 -270 V
+491 -271 V
+490 -299 V
+491 -309 V
+491 -326 V
+490 -350 V
+491 -291 V
+491 -335 V
+490 -351 V
+489 -320 V
+% End plot #148
+% Begin plot #149
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7052 M
+491 0 V
+491 -43 V
+490 -39 V
+491 -45 V
+490 -56 V
+491 -75 V
+491 -92 V
+490 -99 V
+491 -151 V
+491 -184 V
+490 -197 V
+491 -215 V
+491 -323 V
+490 -347 V
+491 -413 V
+491 -405 V
+490 -455 V
+489 -505 V
+1897 7052 Star
+2388 7052 Star
+2879 7009 Star
+3369 6970 Star
+3860 6925 Star
+4350 6869 Star
+4841 6794 Star
+5332 6702 Star
+5822 6603 Star
+6313 6452 Star
+6804 6268 Star
+7294 6071 Star
+7785 5856 Star
+8276 5533 Star
+8766 5186 Star
+9257 4773 Star
+9748 4368 Star
+10238 3913 Star
+% End plot #149
+% Begin plot #150
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7059 M
+491 -14 V
+491 -36 V
+490 -33 V
+491 -70 V
+490 -54 V
+491 -88 V
+491 -117 V
+490 -101 V
+491 -178 V
+491 -201 V
+490 -231 V
+491 -256 V
+491 -367 V
+490 -343 V
+491 -426 V
+491 -449 V
+490 -418 V
+489 -495 V
+% End plot #150
+% Begin plot #151
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7105 M
+491 -53 V
+491 -44 V
+490 -41 V
+491 -51 V
+490 -80 V
+491 -57 V
+491 -87 V
+490 -93 V
+491 -143 V
+491 -175 V
+490 -206 V
+491 -282 V
+491 -277 V
+490 -369 V
+491 -395 V
+491 -417 V
+490 -424 V
+489 -490 V
+1897 7105 Star
+2388 7052 Star
+2879 7008 Star
+3369 6967 Star
+3860 6916 Star
+4350 6836 Star
+4841 6779 Star
+5332 6692 Star
+5822 6599 Star
+6313 6456 Star
+6804 6281 Star
+7294 6075 Star
+7785 5793 Star
+8276 5516 Star
+8766 5147 Star
+9257 4752 Star
+9748 4335 Star
+10238 3911 Star
+% End plot #151
+% Begin plot #152
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7016 M
+491 -45 V
+491 -47 V
+490 -62 V
+491 -70 V
+490 -119 V
+491 -86 V
+491 -175 V
+490 -171 V
+491 -231 V
+491 -247 V
+490 -317 V
+491 -313 V
+491 -318 V
+490 -350 V
+491 -361 V
+491 -308 V
+490 -393 V
+489 -355 V
+% End plot #152
+% Begin plot #153
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7083 M
+491 -24 V
+491 -46 V
+490 -31 V
+491 -66 V
+490 -47 V
+491 -97 V
+491 -93 V
+490 -68 V
+491 -161 V
+491 -158 V
+490 -213 V
+491 -281 V
+491 -272 V
+490 -350 V
+491 -375 V
+491 -469 V
+490 -418 V
+489 -476 V
+1897 7083 Star
+2388 7059 Star
+2879 7013 Star
+3369 6982 Star
+3860 6916 Star
+4350 6869 Star
+4841 6772 Star
+5332 6679 Star
+5822 6611 Star
+6313 6450 Star
+6804 6292 Star
+7294 6079 Star
+7785 5798 Star
+8276 5526 Star
+8766 5176 Star
+9257 4801 Star
+9748 4332 Star
+10238 3914 Star
+% End plot #153
+% Begin plot #154
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7083 M
+491 -24 V
+491 -46 V
+490 -31 V
+491 -66 V
+490 -47 V
+491 -97 V
+491 -93 V
+490 -68 V
+491 -161 V
+491 -158 V
+490 -213 V
+491 -281 V
+491 -272 V
+490 -350 V
+491 -375 V
+491 -469 V
+490 -418 V
+489 -476 V
+% End plot #154
+% Begin plot #155
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7124 M
+491 -80 V
+491 -39 V
+490 -40 V
+491 -40 V
+490 -51 V
+491 -55 V
+491 -129 V
+490 -86 V
+491 -146 V
+491 -184 V
+490 -210 V
+491 -255 V
+491 -275 V
+490 -390 V
+491 -351 V
+491 -423 V
+490 -480 V
+489 -453 V
+1897 7124 Star
+2388 7044 Star
+2879 7005 Star
+3369 6965 Star
+3860 6925 Star
+4350 6874 Star
+4841 6819 Star
+5332 6690 Star
+5822 6604 Star
+6313 6458 Star
+6804 6274 Star
+7294 6064 Star
+7785 5809 Star
+8276 5534 Star
+8766 5144 Star
+9257 4793 Star
+9748 4370 Star
+10238 3890 Star
+% End plot #155
+% Begin plot #156
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7020 M
+491 -40 V
+491 -68 V
+490 -47 V
+491 -69 V
+490 -90 V
+491 -72 V
+491 -190 V
+490 -218 V
+491 -192 V
+491 -253 V
+490 -305 V
+491 -270 V
+491 -339 V
+490 -404 V
+491 -297 V
+491 -414 V
+490 -309 V
+489 -341 V
+% End plot #156
+% Begin plot #157
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7076 M
+491 -10 V
+491 -52 V
+490 -49 V
+491 -30 V
+490 -82 V
+491 -81 V
+491 -62 V
+490 -116 V
+491 -131 V
+491 -181 V
+490 -198 V
+491 -246 V
+491 -319 V
+490 -364 V
+491 -366 V
+491 -436 V
+490 -475 V
+489 -451 V
+1897 7076 Star
+2388 7066 Star
+2879 7014 Star
+3369 6965 Star
+3860 6935 Star
+4350 6853 Star
+4841 6772 Star
+5332 6710 Star
+5822 6594 Star
+6313 6463 Star
+6804 6282 Star
+7294 6084 Star
+7785 5838 Star
+8276 5519 Star
+8766 5155 Star
+9257 4789 Star
+9748 4353 Star
+10238 3878 Star
+% End plot #157
+% Begin plot #158
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 7057 M
+491 -31 V
+491 -52 V
+490 -39 V
+491 -61 V
+490 -80 V
+491 -98 V
+491 -82 V
+490 -155 V
+491 -183 V
+491 -223 V
+490 -296 V
+491 -279 V
+491 -381 V
+490 -378 V
+491 -356 V
+491 -426 V
+490 -411 V
+489 -415 V
+% End plot #158
+% Begin plot #159
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7058 M
+491 -23 V
+491 -29 V
+490 -53 V
+491 -35 V
+490 -57 V
+491 -77 V
+491 -65 V
+490 -112 V
+491 -141 V
+491 -181 V
+490 -202 V
+491 -306 V
+491 -261 V
+490 -338 V
+491 -386 V
+491 -437 V
+490 -461 V
+489 -472 V
+1897 7058 Star
+2388 7035 Star
+2879 7006 Star
+3369 6953 Star
+3860 6918 Star
+4350 6861 Star
+4841 6784 Star
+5332 6719 Star
+5822 6607 Star
+6313 6466 Star
+6804 6285 Star
+7294 6083 Star
+7785 5777 Star
+8276 5516 Star
+8766 5178 Star
+9257 4792 Star
+9748 4355 Star
+10238 3894 Star
+% End plot #159
+% Begin plot #160
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 6934 M
+491 -20 V
+491 -52 V
+490 -84 V
+491 -91 V
+490 -83 V
+491 -167 V
+491 -227 V
+490 -244 V
+491 -283 V
+491 -283 V
+490 -287 V
+491 -397 V
+491 -208 V
+490 -286 V
+491 -357 V
+491 -309 V
+490 -316 V
+489 -371 V
+% End plot #160
+% Begin plot #161
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7081 M
+491 -31 V
+491 -46 V
+490 -18 V
+491 -69 V
+490 -75 V
+491 -48 V
+491 -86 V
+490 -108 V
+491 -151 V
+491 -196 V
+490 -176 V
+491 -261 V
+491 -301 V
+490 -343 V
+491 -405 V
+491 -405 V
+490 -476 V
+489 -438 V
+1897 7081 Star
+2388 7050 Star
+2879 7004 Star
+3369 6986 Star
+3860 6917 Star
+4350 6842 Star
+4841 6794 Star
+5332 6708 Star
+5822 6600 Star
+6313 6449 Star
+6804 6253 Star
+7294 6077 Star
+7785 5816 Star
+8276 5515 Star
+8766 5172 Star
+9257 4767 Star
+9748 4362 Star
+10238 3886 Star
+% End plot #161
+% Begin plot #162
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 6976 M
+491 -14 V
+491 -38 V
+490 -50 V
+491 -60 V
+490 -83 V
+491 -106 V
+491 -173 V
+490 -189 V
+491 -210 V
+491 -254 V
+490 -264 V
+491 -274 V
+491 -364 V
+490 -314 V
+491 -384 V
+491 -386 V
+490 -353 V
+489 -329 V
+% End plot #162
+% Begin plot #163
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7089 M
+491 -51 V
+491 -29 V
+490 -33 V
+491 -51 V
+490 -61 V
+491 -57 V
+491 -120 V
+490 -95 V
+491 -123 V
+491 -175 V
+490 -204 V
+491 -273 V
+491 -293 V
+490 -380 V
+491 -357 V
+491 -425 V
+490 -470 V
+489 -485 V
+1897 7089 Star
+2388 7038 Star
+2879 7009 Star
+3369 6976 Star
+3860 6925 Star
+4350 6864 Star
+4841 6807 Star
+5332 6687 Star
+5822 6592 Star
+6313 6469 Star
+6804 6294 Star
+7294 6090 Star
+7785 5817 Star
+8276 5524 Star
+8766 5144 Star
+9257 4787 Star
+9748 4362 Star
+10238 3892 Star
+% End plot #163
+% Begin plot #164
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 6983 M
+491 -50 V
+491 -73 V
+490 -55 V
+491 -54 V
+490 -159 V
+491 -102 V
+491 -237 V
+490 -192 V
+491 -266 V
+491 -350 V
+490 -233 V
+491 -251 V
+491 -363 V
+490 -316 V
+491 -327 V
+491 -301 V
+490 -326 V
+489 -377 V
+% End plot #164
+% Begin plot #165
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7060 M
+491 -14 V
+491 -34 V
+490 -56 V
+491 -36 V
+490 -61 V
+491 -36 V
+491 -124 V
+490 -122 V
+491 -109 V
+491 -185 V
+490 -201 V
+491 -250 V
+491 -313 V
+490 -344 V
+491 -397 V
+491 -431 V
+490 -394 V
+489 -559 V
+1897 7060 Star
+2388 7046 Star
+2879 7012 Star
+3369 6956 Star
+3860 6920 Star
+4350 6859 Star
+4841 6823 Star
+5332 6699 Star
+5822 6577 Star
+6313 6468 Star
+6804 6283 Star
+7294 6082 Star
+7785 5832 Star
+8276 5519 Star
+8766 5175 Star
+9257 4778 Star
+9748 4347 Star
+10238 3953 Star
+% End plot #165
+% Begin plot #166
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7074 M
+491 -53 V
+491 -45 V
+490 -62 V
+491 -35 V
+490 -74 V
+491 -57 V
+491 -120 V
+490 -144 V
+491 -162 V
+491 -270 V
+490 -240 V
+491 -325 V
+491 -369 V
+490 -361 V
+491 -407 V
+491 -424 V
+490 -367 V
+489 -493 V
+% End plot #166
+% Begin plot #167
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7112 M
+491 -72 V
+491 -33 V
+490 -51 V
+491 -18 V
+490 -88 V
+491 -82 V
+491 -71 V
+490 -94 V
+491 -134 V
+491 -195 V
+490 -204 V
+491 -222 V
+491 -326 V
+490 -355 V
+491 -388 V
+491 -421 V
+490 -447 V
+489 -470 V
+1897 7112 Star
+2388 7040 Star
+2879 7007 Star
+3369 6956 Star
+3860 6938 Star
+4350 6850 Star
+4841 6768 Star
+5332 6697 Star
+5822 6603 Star
+6313 6469 Star
+6804 6274 Star
+7294 6070 Star
+7785 5848 Star
+8276 5522 Star
+8766 5167 Star
+9257 4779 Star
+9748 4358 Star
+10238 3911 Star
+% End plot #167
+% Begin plot #168
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 6996 M
+491 -37 V
+491 -54 V
+490 -63 V
+491 -41 V
+490 -128 V
+491 -117 V
+491 -165 V
+490 -212 V
+491 -209 V
+491 -265 V
+490 -286 V
+491 -264 V
+491 -334 V
+490 -370 V
+491 -318 V
+491 -408 V
+490 -312 V
+489 -331 V
+% End plot #168
+% Begin plot #169
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7074 M
+491 -28 V
+491 -36 V
+490 -61 V
+491 -41 V
+490 -58 V
+491 -35 V
+491 -114 V
+490 -84 V
+491 -155 V
+491 -172 V
+490 -208 V
+491 -225 V
+491 -337 V
+490 -341 V
+491 -373 V
+491 -436 V
+490 -472 V
+489 -482 V
+1897 7074 Star
+2388 7046 Star
+2879 7010 Star
+3369 6949 Star
+3860 6908 Star
+4350 6850 Star
+4841 6815 Star
+5332 6701 Star
+5822 6617 Star
+6313 6462 Star
+6804 6290 Star
+7294 6082 Star
+7785 5857 Star
+8276 5520 Star
+8766 5179 Star
+9257 4806 Star
+9748 4370 Star
+10238 3898 Star
+% End plot #169
+% Begin plot #170
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7074 M
+491 -28 V
+491 -35 V
+490 -62 V
+491 -39 V
+490 -60 V
+491 -31 V
+491 -121 V
+490 -87 V
+491 -158 V
+491 -186 V
+490 -221 V
+491 -233 V
+491 -355 V
+490 -332 V
+491 -376 V
+491 -431 V
+490 -460 V
+489 -489 V
+% End plot #170
+% Begin plot #171
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7099 M
+491 -64 V
+491 -29 V
+490 -31 V
+491 -46 V
+490 -88 V
+491 -22 V
+491 -104 V
+490 -124 V
+491 -127 V
+491 -145 V
+490 -240 V
+491 -242 V
+491 -331 V
+490 -357 V
+491 -391 V
+491 -421 V
+490 -430 V
+489 -503 V
+1897 7099 Star
+2388 7035 Star
+2879 7006 Star
+3369 6975 Star
+3860 6929 Star
+4350 6841 Star
+4841 6819 Star
+5332 6715 Star
+5822 6591 Star
+6313 6464 Star
+6804 6319 Star
+7294 6079 Star
+7785 5837 Star
+8276 5506 Star
+8766 5149 Star
+9257 4758 Star
+9748 4337 Star
+10238 3907 Star
+% End plot #171
+% Begin plot #172
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 6990 M
+491 -55 V
+491 -65 V
+490 -44 V
+491 -95 V
+490 -123 V
+491 -121 V
+491 -171 V
+490 -268 V
+491 -231 V
+491 -347 V
+490 -230 V
+491 -308 V
+491 -344 V
+490 -331 V
+491 -309 V
+491 -319 V
+490 -317 V
+489 -361 V
+% End plot #172
+% Begin plot #173
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7115 M
+491 -46 V
+491 -37 V
+490 -80 V
+491 -45 V
+490 -26 V
+491 -118 V
+491 -79 V
+490 -79 V
+491 -132 V
+491 -165 V
+490 -239 V
+491 -258 V
+491 -303 V
+490 -356 V
+491 -381 V
+491 -435 V
+490 -439 V
+489 -475 V
+1897 7115 Star
+2388 7069 Star
+2879 7032 Star
+3369 6952 Star
+3860 6907 Star
+4350 6881 Star
+4841 6763 Star
+5332 6684 Star
+5822 6605 Star
+6313 6473 Star
+6804 6308 Star
+7294 6069 Star
+7785 5811 Star
+8276 5508 Star
+8766 5152 Star
+9257 4771 Star
+9748 4336 Star
+10238 3897 Star
+% End plot #173
+% Begin plot #174
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7074 M
+491 -45 V
+491 -50 V
+490 -68 V
+491 -45 V
+490 -48 V
+491 -126 V
+491 -90 V
+490 -121 V
+491 -180 V
+491 -232 V
+490 -287 V
+491 -313 V
+491 -348 V
+490 -378 V
+491 -372 V
+491 -449 V
+490 -389 V
+489 -472 V
+% End plot #174
+% Begin plot #175
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7084 M
+491 -35 V
+491 -29 V
+490 -43 V
+491 -48 V
+490 -49 V
+491 -53 V
+491 -113 V
+490 -135 V
+491 -109 V
+491 -191 V
+490 -206 V
+491 -264 V
+491 -289 V
+490 -341 V
+491 -392 V
+491 -431 V
+490 -450 V
+489 -460 V
+1897 7084 Star
+2388 7049 Star
+2879 7020 Star
+3369 6977 Star
+3860 6929 Star
+4350 6880 Star
+4841 6827 Star
+5332 6714 Star
+5822 6579 Star
+6313 6470 Star
+6804 6279 Star
+7294 6073 Star
+7785 5809 Star
+8276 5520 Star
+8766 5179 Star
+9257 4787 Star
+9748 4356 Star
+10238 3906 Star
+% End plot #175
+% Begin plot #176
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 7090 M
+491 -44 V
+491 -29 V
+490 -37 V
+491 -45 V
+490 -55 V
+491 -74 V
+491 -118 V
+490 -130 V
+491 -134 V
+491 -192 V
+490 -247 V
+491 -302 V
+491 -279 V
+490 -356 V
+491 -387 V
+491 -404 V
+490 -461 V
+489 -410 V
+% End plot #176
+% Begin plot #177
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7090 M
+491 -59 V
+491 -6 V
+490 -42 V
+491 -72 V
+490 -6 V
+491 -103 V
+491 -102 V
+490 -78 V
+491 -151 V
+491 -152 V
+490 -245 V
+491 -241 V
+491 -315 V
+490 -358 V
+491 -357 V
+491 -467 V
+490 -424 V
+489 -498 V
+1897 7090 Star
+2388 7031 Star
+2879 7025 Star
+3369 6983 Star
+3860 6911 Star
+4350 6905 Star
+4841 6802 Star
+5332 6700 Star
+5822 6622 Star
+6313 6471 Star
+6804 6319 Star
+7294 6074 Star
+7785 5833 Star
+8276 5518 Star
+8766 5160 Star
+9257 4803 Star
+9748 4336 Star
+10238 3912 Star
+% End plot #177
+% Begin plot #178
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7090 M
+491 -59 V
+491 -6 V
+490 -42 V
+491 -72 V
+490 -6 V
+491 -103 V
+491 -99 V
+490 -84 V
+491 -154 V
+491 -147 V
+490 -265 V
+491 -258 V
+491 -327 V
+490 -360 V
+491 -356 V
+491 -459 V
+490 -430 V
+489 -470 V
+% End plot #178
+% Begin plot #179
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7090 M
+491 -39 V
+491 -70 V
+490 -15 V
+491 -68 V
+490 -31 V
+491 -98 V
+491 -69 V
+490 -115 V
+491 -123 V
+491 -181 V
+490 -191 V
+491 -269 V
+491 -297 V
+490 -354 V
+491 -380 V
+491 -433 V
+490 -447 V
+489 -506 V
+1897 7090 Star
+2388 7051 Star
+2879 6981 Star
+3369 6966 Star
+3860 6898 Star
+4350 6867 Star
+4841 6769 Star
+5332 6700 Star
+5822 6585 Star
+6313 6462 Star
+6804 6281 Star
+7294 6090 Star
+7785 5821 Star
+8276 5524 Star
+8766 5170 Star
+9257 4790 Star
+9748 4357 Star
+10238 3910 Star
+% End plot #179
+% Begin plot #180
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7090 M
+491 -39 V
+491 -70 V
+490 -15 V
+491 -68 V
+490 -31 V
+491 -98 V
+491 -69 V
+490 -115 V
+491 -123 V
+491 -181 V
+490 -192 V
+491 -271 V
+491 -298 V
+490 -354 V
+491 -379 V
+491 -434 V
+490 -448 V
+489 -499 V
+% End plot #180
+% Begin plot #181
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7096 M
+491 -36 V
+491 -34 V
+490 -62 V
+491 -47 V
+490 -51 V
+491 -74 V
+491 -91 V
+490 -95 V
+491 -140 V
+491 -189 V
+490 -198 V
+491 -281 V
+491 -286 V
+490 -374 V
+491 -369 V
+491 -421 V
+490 -474 V
+489 -441 V
+1897 7096 Star
+2388 7060 Star
+2879 7026 Star
+3369 6964 Star
+3860 6917 Star
+4350 6866 Star
+4841 6792 Star
+5332 6701 Star
+5822 6606 Star
+6313 6466 Star
+6804 6277 Star
+7294 6079 Star
+7785 5798 Star
+8276 5512 Star
+8766 5138 Star
+9257 4769 Star
+9748 4348 Star
+10238 3874 Star
+% End plot #181
+% Begin plot #182
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7065 M
+491 -51 V
+491 -52 V
+490 -50 V
+491 -69 V
+490 -37 V
+491 -100 V
+491 -146 V
+490 -140 V
+491 -207 V
+491 -250 V
+490 -269 V
+491 -335 V
+491 -309 V
+490 -363 V
+491 -394 V
+491 -396 V
+490 -382 V
+489 -372 V
+% End plot #182
+% Begin plot #183
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7026 M
+491 32 V
+491 -62 V
+490 -25 V
+491 -60 V
+490 -45 V
+491 -77 V
+491 -81 V
+490 -88 V
+491 -162 V
+491 -176 V
+490 -201 V
+491 -260 V
+491 -294 V
+490 -332 V
+491 -407 V
+491 -420 V
+490 -450 V
+489 -505 V
+1897 7026 Star
+2388 7058 Star
+2879 6996 Star
+3369 6971 Star
+3860 6911 Star
+4350 6866 Star
+4841 6789 Star
+5332 6708 Star
+5822 6620 Star
+6313 6458 Star
+6804 6282 Star
+7294 6081 Star
+7785 5821 Star
+8276 5527 Star
+8766 5195 Star
+9257 4788 Star
+9748 4368 Star
+10238 3918 Star
+% End plot #183
+% Begin plot #184
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7034 M
+491 16 V
+491 -66 V
+490 -23 V
+491 -49 V
+490 -63 V
+491 -82 V
+491 -105 V
+490 -107 V
+491 -168 V
+491 -239 V
+490 -207 V
+491 -290 V
+491 -322 V
+490 -336 V
+491 -460 V
+491 -407 V
+490 -508 V
+489 -438 V
+% End plot #184
+% Begin plot #185
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7095 M
+491 -45 V
+491 -37 V
+490 -38 V
+491 -55 V
+490 -88 V
+491 -19 V
+491 -89 V
+490 -133 V
+491 -129 V
+491 -231 V
+490 -154 V
+491 -264 V
+491 -306 V
+490 -314 V
+491 -416 V
+491 -409 V
+490 -439 V
+489 -501 V
+1897 7095 Star
+2388 7050 Star
+2879 7013 Star
+3369 6975 Star
+3860 6920 Star
+4350 6832 Star
+4841 6813 Star
+5332 6724 Star
+5822 6591 Star
+6313 6462 Star
+6804 6231 Star
+7294 6077 Star
+7785 5813 Star
+8276 5507 Star
+8766 5193 Star
+9257 4777 Star
+9748 4368 Star
+10238 3929 Star
+% End plot #185
+% Begin plot #186
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 6947 M
+491 -76 V
+491 -47 V
+490 -100 V
+491 -113 V
+490 -189 V
+491 -184 V
+491 -270 V
+490 -320 V
+491 -316 V
+491 -462 V
+490 -148 V
+491 -285 V
+491 -306 V
+490 -210 V
+491 -310 V
+491 -261 V
+490 -299 V
+489 -281 V
+% End plot #186
+% Begin plot #187
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7041 M
+491 12 V
+491 -51 V
+490 -45 V
+491 -41 V
+490 -49 V
+491 -126 V
+491 -35 V
+490 -90 V
+491 -156 V
+491 -184 V
+490 -208 V
+491 -232 V
+491 -328 V
+490 -343 V
+491 -393 V
+491 -415 V
+490 -494 V
+489 -439 V
+1897 7041 Star
+2388 7053 Star
+2879 7002 Star
+3369 6957 Star
+3860 6916 Star
+4350 6867 Star
+4841 6741 Star
+5332 6706 Star
+5822 6616 Star
+6313 6460 Star
+6804 6276 Star
+7294 6068 Star
+7785 5836 Star
+8276 5508 Star
+8766 5165 Star
+9257 4772 Star
+9748 4357 Star
+10238 3863 Star
+% End plot #187
+% Begin plot #188
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 6995 M
+491 12 V
+491 -49 V
+490 -46 V
+491 -71 V
+490 -38 V
+491 -129 V
+491 -87 V
+490 -150 V
+491 -223 V
+491 -248 V
+490 -267 V
+491 -308 V
+491 -318 V
+490 -362 V
+491 -361 V
+491 -423 V
+490 -430 V
+489 -399 V
+% End plot #188
+% Begin plot #189
+3.333 UP
+stroke
+LT1
+0.25 0.25 0.25 C 1897 7041 M
+491 6 V
+491 -31 V
+490 -65 V
+491 -25 V
+490 -87 V
+491 -62 V
+491 -100 V
+490 -52 V
+491 -176 V
+491 -124 V
+490 -255 V
+491 -250 V
+491 -303 V
+490 -329 V
+491 -383 V
+491 -448 V
+490 -433 V
+489 -510 V
+1897 7041 Star
+2388 7047 Star
+2879 7016 Star
+3369 6951 Star
+3860 6926 Star
+4350 6839 Star
+4841 6777 Star
+5332 6677 Star
+5822 6625 Star
+6313 6449 Star
+6804 6325 Star
+7294 6070 Star
+7785 5820 Star
+8276 5517 Star
+8766 5188 Star
+9257 4805 Star
+9748 4357 Star
+10238 3924 Star
+% End plot #189
+% Begin plot #190
+1.500 UL
+LT0
+0.00 0.00 1.00 C 1897 6957 M
+491 -25 V
+491 -48 V
+490 -76 V
+491 -90 V
+490 -151 V
+491 -109 V
+491 -208 V
+490 -158 V
+491 -340 V
+491 -228 V
+490 -343 V
+491 -263 V
+491 -363 V
+490 -273 V
+491 -305 V
+491 -350 V
+490 -338 V
+489 -351 V
+% End plot #190
+% Begin plot #191
+3.333 UP
+stroke
+LT1
+0.00 0.50 0.00 C 1897 7110 M
+491 -68 V
+491 -25 V
+490 -51 V
+491 -40 V
+490 -69 V
+491 -48 V
+491 -115 V
+490 -88 V
+491 -141 V
+491 -154 V
+490 -233 V
+491 -241 V
+491 -340 V
+490 -316 V
+491 -427 V
+491 -419 V
+490 -424 V
+489 -474 V
+1897 7110 Star
+2388 7042 Star
+2879 7017 Star
+3369 6966 Star
+3860 6926 Star
+4350 6857 Star
+4841 6809 Star
+5332 6694 Star
+5822 6606 Star
+6313 6465 Star
+6804 6311 Star
+7294 6078 Star
+7785 5837 Star
+8276 5497 Star
+8766 5181 Star
+9257 4754 Star
+9748 4335 Star
+10238 3911 Star
+% End plot #191
+% Begin plot #192
+1.500 UL
+LT0
+1.00 0.00 0.00 C 1897 7012 M
+491 -51 V
+491 -62 V
+490 -68 V
+491 -68 V
+490 -133 V
+491 -124 V
+491 -175 V
+490 -224 V
+491 -202 V
+491 -272 V
+490 -289 V
+491 -285 V
+491 -347 V
+490 -331 V
+491 -348 V
+491 -342 V
+490 -341 V
+489 -327 V
+% End plot #192
+% Begin plot #193
+3.333 UP
+stroke
+LT1
+0.00 0.75 0.75 C 1897 7080 M
+491 -30 V
+491 -52 V
+490 -33 V
+491 -46 V
+490 -64 V
+491 -91 V
+491 -58 V
+490 -114 V
+491 -121 V
+491 -167 V
+490 -229 V
+491 -267 V
+491 -299 V
+490 -356 V
+491 -360 V
+491 -440 V
+490 -440 V
+489 -498 V
+1897 7080 Star
+2388 7050 Star
+2879 6998 Star
+3369 6965 Star
+3860 6919 Star
+4350 6855 Star
+4841 6764 Star
+5332 6706 Star
+5822 6592 Star
+6313 6471 Star
+6804 6304 Star
+7294 6075 Star
+7785 5808 Star
+8276 5509 Star
+8766 5153 Star
+9257 4793 Star
+9748 4353 Star
+10238 3913 Star
+% End plot #193
+% Begin plot #194
+1.500 UL
+LT0
+0.75 0.00 0.75 C 1897 7009 M
+491 -28 V
+491 -57 V
+490 -34 V
+491 -72 V
+490 -96 V
+491 -119 V
+491 -93 V
+490 -180 V
+491 -210 V
+491 -221 V
+490 -325 V
+491 -323 V
+491 -312 V
+490 -378 V
+491 -331 V
+491 -392 V
+490 -352 V
+489 -421 V
+% End plot #194
+% Begin plot #195
+3.333 UP
+stroke
+LT1
+0.75 0.75 0.00 C 1897 7127 M
+491 -73 V
+491 -44 V
+490 -46 V
+491 -45 V
+490 -76 V
+491 -49 V
+491 -58 V
+490 -145 V
+491 -126 V
+491 -189 V
+490 -203 V
+491 -274 V
+491 -277 V
+490 -392 V
+491 -355 V
+491 -414 V
+490 -470 V
+489 -470 V
+1897 7127 Star
+2388 7054 Star
+2879 7010 Star
+3369 6964 Star
+3860 6919 Star
+4350 6843 Star
+4841 6794 Star
+5332 6736 Star
+5822 6591 Star
+6313 6465 Star
+6804 6276 Star
+7294 6073 Star
+7785 5799 Star
+8276 5522 Star
+8766 5130 Star
+9257 4775 Star
+9748 4361 Star
+10238 3891 Star
+% End plot #195
+% Begin plot #196
+1.500 UL
+LT0
+0.25 0.25 0.25 C 1897 7021 M
+491 -66 V
+491 -67 V
+490 -47 V
+491 -97 V
+490 -123 V
+491 -60 V
+491 -176 V
+490 -258 V
+491 -217 V
+491 -344 V
+490 -258 V
+491 -345 V
+491 -264 V
+490 -388 V
+491 -281 V
+491 -344 V
+490 -328 V
+489 -377 V
+% End plot #196
+% Begin plot #197
+3.333 UP
+stroke
+LT1
+0.00 0.00 1.00 C 1897 7091 M
+491 -46 V
+491 -38 V
+490 -46 V
+491 -49 V
+490 -59 V
+491 -77 V
+491 -78 V
+490 -139 V
+491 -95 V
+491 -132 V
+490 -256 V
+491 -254 V
+491 -311 V
+490 -338 V
+491 -402 V
+491 -425 V
+490 -445 V
+489 -474 V
+1897 7091 Star
+2388 7045 Star
+2879 7007 Star
+3369 6961 Star
+3860 6912 Star
+4350 6853 Star
+4841 6776 Star
+5332 6698 Star
+5822 6559 Star
+6313 6464 Star
+6804 6332 Star
+7294 6076 Star
+7785 5822 Star
+8276 5511 Star
+8766 5173 Star
+9257 4771 Star
+9748 4346 Star
+10238 3901 Star
+% End plot #197
+% Begin plot #198
+1.500 UL
+LT0
+0.00 0.50 0.00 C 1897 7008 M
+491 -48 V
+491 -50 V
+490 -57 V
+491 -78 V
+490 -102 V
+491 -109 V
+491 -176 V
+490 -223 V
+491 -170 V
+491 -229 V
+490 -340 V
+491 -304 V
+491 -324 V
+490 -327 V
+491 -356 V
+491 -372 V
+490 -349 V
+489 -355 V
+% End plot #198
+% Begin plot #199
+3.333 UP
+stroke
+LT1
+1.00 0.00 0.00 C 1897 7085 M
+491 -32 V
+491 -58 V
+490 -7 V
+491 -53 V
+490 -91 V
+491 -35 V
+491 -91 V
+490 -127 V
+491 -114 V
+491 -223 V
+490 -170 V
+491 -245 V
+491 -312 V
+490 -318 V
+491 -400 V
+491 -473 V
+490 -470 V
+489 -421 V
+1897 7085 Star
+2388 7053 Star
+2879 6995 Star
+3369 6988 Star
+3860 6935 Star
+4350 6844 Star
+4841 6809 Star
+5332 6718 Star
+5822 6591 Star
+6313 6477 Star
+6804 6254 Star
+7294 6084 Star
+7785 5839 Star
+8276 5527 Star
+8766 5209 Star
+9257 4809 Star
+9748 4336 Star
+10238 3866 Star
+% End plot #199
+% Begin plot #200
+1.500 UL
+LT0
+0.00 0.75 0.75 C 1897 6999 M
+491 -27 V
+491 -47 V
+490 -38 V
+491 -83 V
+490 -127 V
+491 -57 V
+491 -167 V
+490 -191 V
+491 -230 V
+491 -259 V
+490 -258 V
+491 -277 V
+491 -369 V
+490 -295 V
+491 -422 V
+491 -331 V
+490 -411 V
+489 -330 V
+% End plot #200
+% Begin plot #201
+3.333 UP
+stroke
+LT1
+0.75 0.00 0.75 C 1897 7076 M
+491 -26 V
+491 -45 V
+490 -38 V
+491 -52 V
+490 -29 V
+491 -79 V
+491 -99 V
+490 -110 V
+491 -120 V
+491 -191 V
+490 -223 V
+491 -224 V
+491 -334 V
+490 -354 V
+491 -379 V
+491 -437 V
+490 -445 V
+489 -435 V
+1897 7076 Star
+2388 7050 Star
+2879 7005 Star
+3369 6967 Star
+3860 6915 Star
+4350 6886 Star
+4841 6807 Star
+5332 6708 Star
+5822 6598 Star
+6313 6478 Star
+6804 6287 Star
+7294 6064 Star
+7785 5840 Star
+8276 5506 Star
+8766 5152 Star
+9257 4773 Star
+9748 4336 Star
+10238 3891 Star
+% End plot #201
+% Begin plot #202
+1.500 UL
+LT0
+0.75 0.75 0.00 C 1897 7048 M
+491 -68 V
+491 -45 V
+490 -66 V
+491 -46 V
+490 -58 V
+491 -133 V
+491 -136 V
+490 -209 V
+491 -190 V
+491 -228 V
+490 -324 V
+491 -267 V
+491 -358 V
+490 -344 V
+491 -404 V
+491 -343 V
+490 -384 V
+489 -330 V
+% End plot #202
+% Begin plot #203
+3.333 UP
+stroke
+LT0
+0.00 1.00 0.00 C 1897 7036 M
+491 -39 V
+491 -47 V
+490 -52 V
+491 -65 V
+490 -72 V
+491 -97 V
+491 -127 V
+490 -150 V
+491 -178 V
+491 -212 V
+490 -248 V
+491 -281 V
+491 -324 V
+490 -349 V
+491 -386 V
+491 -408 V
+490 -417 V
+489 -423 V
+1897 7036 Box
+2388 6997 Box
+2879 6950 Box
+3369 6898 Box
+3860 6833 Box
+4350 6761 Box
+4841 6664 Box
+5332 6537 Box
+5822 6387 Box
+6313 6209 Box
+6804 5997 Box
+7294 5749 Box
+7785 5468 Box
+8276 5144 Box
+8766 4795 Box
+9257 4409 Box
+9748 4001 Box
+10238 3584 Box
+% End plot #203
+1.000 UP
+0.500 UL
+LTb
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

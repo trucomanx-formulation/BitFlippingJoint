@@ -1,0 +1,427 @@
+M:3
+Ps:
+0.001000	0.258708	0.142200	
+InfMutuaTotal:
+0.582654	0.262300	0.496000	
+InfMutuaMaxValor:0.582654
+InfMutuaMaxId   :1
+MaxCorr0        :0.998000
+IdMaxCorr0      :1
+
+BETA=1.000000
+ITER=15
+Pb_min=1/MY_RAND_MAX=	5.960464e-08	MY_RAND_MAX=1.677722e+07
+BERminNecesario=     	1.000000e-06
+PackMaxEnviados=     	500000
+BERminConfiable=     	9.803922e-07
+Si BERminConfiable > BERminNecesario !!!!Entonces incremente PackMaxEnviados!!!!
+PackMaxEnviados es un (unsigned long int) de 32 bits,
+su valor máximo es de:2147483647
+
+K=204
+N=306
+Rc=0.666667
+
+
+
+Tiempo de inicio:	  0d  0h  0m  0s
+T. Analisis Est.:	  0d  0h  1m 39s
+PACOTES ENVIADOS:	2635
+{Eb/N0}_db:      	0.000000e+00
+Pb:              	1.240080e-01
+BERminConfiable: 	1.860327e-04
+BERmin(Act.)     :1.238085e-01	BERmin(Next-Est.):1.238085e-02
+Tiempo final     :	  0d  0h  0m  3s
+T. Analisis      :	  0d  0h  0m  3s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  0m  3s
+T. Analisis Est.:	  0d  0h  0m 30s
+PACOTES ENVIADOS:	26395
+{Eb/N0}_db:      	3.333333e-01
+Pb:              	1.150000e-01
+BERminConfiable: 	1.857155e-05
+BERmin(Act.)     :1.149256e-01	BERmin(Next-Est.):1.141872e-02
+Tiempo final     :	  0d  0h  0m 30s
+T. Analisis      :	  0d  0h  0m 27s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  0m 30s
+T. Analisis Est.:	  0d  0h  0m 29s
+PACOTES ENVIADOS:	28619
+{Eb/N0}_db:      	6.666667e-01
+Pb:              	1.061459e-01
+BERminConfiable: 	1.712834e-05
+BERmin(Act.)     :1.061704e-01	BERmin(Next-Est.):1.054446e-02
+Tiempo final     :	  0d  0h  1m  0s
+T. Analisis      :	  0d  0h  0m 30s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  1m  0s
+T. Analisis Est.:	  0d  0h  0m 32s
+PACOTES ENVIADOS:	30992
+{Eb/N0}_db:      	1.000000e+00
+Pb:              	9.747633e-02
+BERminConfiable: 	1.581686e-05
+BERmin(Act.)     :9.735039e-02	BERmin(Next-Est.):9.662250e-03
+Tiempo final     :	  0d  0h  1m 55s
+T. Analisis      :	  0d  0h  0m 55s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  1m 55s
+T. Analisis Est.:	  0d  0h  1m  0s
+PACOTES ENVIADOS:	33822
+{Eb/N0}_db:      	1.333333e+00
+Pb:              	8.903130e-02
+BERminConfiable: 	1.449341e-05
+BERmin(Act.)     :8.881228e-02	BERmin(Next-Est.):4.060717e-02
+Tiempo final     :	  0d  0h  2m 33s
+T. Analisis      :	  0d  0h  0m 38s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  2m 33s
+T. Analisis Est.:	  0d  0h  0m  9s
+PACOTES ENVIADOS:	8047
+{Eb/N0}_db:      	1.666667e+00
+Pb:              	8.084419e-02
+BERminConfiable: 	6.091662e-05
+BERmin(Act.)     :8.085159e-02	BERmin(Next-Est.):3.684697e-02
+Tiempo final     :	  0d  0h  2m 41s
+T. Analisis      :	  0d  0h  0m  8s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  2m 41s
+T. Analisis Est.:	  0d  0h  0m  8s
+PACOTES ENVIADOS:	8869
+{Eb/N0}_db:      	2.000000e+00
+Pb:              	7.295500e-02
+BERminConfiable: 	5.527073e-05
+BERmin(Act.)     :7.295515e-02	BERmin(Next-Est.):3.208834e-02
+Tiempo final     :	  0d  0h  2m 50s
+T. Analisis      :	  0d  0h  0m  9s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  2m 50s
+T. Analisis Est.:	  0d  0h  0m 10s
+PACOTES ENVIADOS:	10184
+{Eb/N0}_db:      	2.333333e+00
+Pb:              	6.539338e-02
+BERminConfiable: 	4.813394e-05
+BERmin(Act.)     :5.990269e-02	BERmin(Next-Est.):1.898278e-02
+Tiempo final     :	  0d  0h  3m  1s
+T. Analisis      :	  0d  0h  0m 11s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  3m  1s
+T. Analisis Est.:	  0d  0h  0m 18s
+PACOTES ENVIADOS:	17215
+{Eb/N0}_db:      	2.666667e+00
+Pb:              	5.819730e-02
+BERminConfiable: 	2.847494e-05
+BERmin(Act.)     :4.398097e-02	BERmin(Next-Est.):1.517624e-02
+Tiempo final     :	  0d  0h  3m 17s
+T. Analisis      :	  0d  0h  0m 16s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  3m 17s
+T. Analisis Est.:	  0d  0h  0m 20s
+PACOTES ENVIADOS:	21533
+{Eb/N0}_db:      	3.000000e+00
+Pb:              	5.139294e-02
+BERminConfiable: 	2.276488e-05
+BERmin(Act.)     :2.991350e-02	BERmin(Next-Est.):1.028443e-02
+Tiempo final     :	  0d  0h  3m 57s
+T. Analisis      :	  0d  0h  0m 40s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  3m 57s
+T. Analisis Est.:	  0d  0h  0m 59s
+PACOTES ENVIADOS:	31775
+{Eb/N0}_db:      	3.333333e+00
+Pb:              	4.500831e-02
+BERminConfiable: 	1.542710e-05
+BERmin(Act.)     :1.868299e-02	BERmin(Next-Est.):5.077012e-03
+Tiempo final     :	  0d  0h  4m 43s
+T. Analisis      :	  0d  0h  0m 46s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  4m 43s
+T. Analisis Est.:	  0d  0h  1m 33s
+PACOTES ENVIADOS:	64368
+{Eb/N0}_db:      	3.666666e+00
+Pb:              	3.906755e-02
+BERminConfiable: 	7.615524e-06
+BERmin(Act.)     :1.073134e-02	BERmin(Next-Est.):2.865207e-03
+Tiempo final     :	  0d  0h  6m 12s
+T. Analisis      :	  0d  0h  1m 29s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  6m 12s
+T. Analisis Est.:	  0d  0h  2m 37s
+PACOTES ENVIADOS:	114057
+{Eb/N0}_db:      	4.000000e+00
+Pb:              	3.358835e-02
+BERminConfiable: 	4.297817e-06
+BERmin(Act.)     :5.768830e-03	BERmin(Next-Est.):1.499033e-03
+Tiempo final     :	  0d  0h  8m 48s
+T. Analisis      :	  0d  0h  2m 36s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h  8m 48s
+T. Analisis Est.:	  0d  0h  4m 58s
+PACOTES ENVIADOS:	218005
+{Eb/N0}_db:      	4.333333e+00
+Pb:              	2.858084e-02
+BERminConfiable: 	2.248554e-06
+BERmin(Act.)     :3.032648e-03	BERmin(Next-Est.):8.354934e-04
+Tiempo final     :	  0d  0h 12m 25s
+T. Analisis      :	  0d  0h  3m 37s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 12m 25s
+T. Analisis Est.:	  0d  0h  6m 29s
+PACOTES ENVIADOS:	391142
+{Eb/N0}_db:      	4.666667e+00
+Pb:              	2.405101e-02
+BERminConfiable: 	1.253243e-06
+BERmin(Act.)     :1.512765e-03	BERmin(Next-Est.):3.222713e-04
+Tiempo final     :	  0d  0h 17m 59s
+T. Analisis      :	  0d  0h  5m 34s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 17m 59s
+T. Analisis Est.:	  0d  0h  7m  6s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	5.000000e+00
+Pb:              	1.999852e-02
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :7.537059e-04	BERmin(Next-Est.):2.139411e-04
+Tiempo final     :	  0d  0h 24m 24s
+T. Analisis      :	  0d  0h  6m 25s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 24m 24s
+T. Analisis Est.:	  0d  0h  6m 24s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	5.333333e+00
+Pb:              	1.641722e-02
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :3.865490e-04	BERmin(Next-Est.):1.028706e-04
+Tiempo final     :	  0d  0h 30m 22s
+T. Analisis      :	  0d  0h  5m 58s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 30m 22s
+T. Analisis Est.:	  0d  0h  5m 57s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	5.666667e+00
+Pb:              	1.329202e-02
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :1.941765e-04	BERmin(Next-Est.):4.193140e-05
+Tiempo final     :	  0d  0h 35m 54s
+T. Analisis      :	  0d  0h  5m 32s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 35m 54s
+T. Analisis Est.:	  0d  0h  5m 31s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	6.000000e+00
+Pb:              	1.060334e-02
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :9.593137e-05	BERmin(Next-Est.):2.467467e-05
+Tiempo final     :	  0d  0h 40m 19s
+T. Analisis      :	  0d  0h  4m 25s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 40m 19s
+T. Analisis Est.:	  0d  0h  4m 25s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	6.333334e+00
+Pb:              	8.323726e-03
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :5.020588e-05	BERmin(Next-Est.):1.606720e-05
+Tiempo final     :	  0d  0h 44m 18s
+T. Analisis      :	  0d  0h  3m 59s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 44m 18s
+T. Analisis Est.:	  0d  0h  3m 59s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	6.666667e+00
+Pb:              	6.422196e-03
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :2.495098e-05	BERmin(Next-Est.):4.388609e-06
+Tiempo final     :	  0d  0h 48m 18s
+T. Analisis      :	  0d  0h  4m  0s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 48m 18s
+T. Analisis Est.:	  0d  0h  3m 59s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	7.000001e+00
+Pb:              	4.863576e-03
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :1.074510e-05	BERmin(Next-Est.):1.860414e-06
+Tiempo final     :	  0d  0h 52m  1s
+T. Analisis      :	  0d  0h  3m 43s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 52m  1s
+T. Analisis Est.:	  0d  0h  3m 42s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	7.333334e+00
+Pb:              	3.610389e-03
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :4.313726e-06	BERmin(Next-Est.):1.022305e-06
+Tiempo final     :	  0d  0h 55m 24s
+T. Analisis      :	  0d  0h  3m 23s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 55m 24s
+T. Analisis Est.:	  0d  0h  3m 23s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	7.666668e+00
+Pb:              	2.622737e-03
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :2.127451e-06	BERmin(Next-Est.):1.039276e-06
+Tiempo final     :	  0d  0h 58m 36s
+T. Analisis      :	  0d  0h  3m 12s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  0h 58m 36s
+T. Analisis Est.:	  0d  0h  3m 12s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	8.000001e+00
+Pb:              	1.861354e-03
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :9.803922e-07	BERmin(Next-Est.):9.259028e-08
+Tiempo final     :	  0d  1h  2m  0s
+T. Analisis      :	  0d  0h  3m 24s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  1h  2m  0s
+T. Analisis Est.:	  0d  0h  3m 23s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	8.333334e+00
+Pb:              	1.288339e-03
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :2.549019e-07	BERmin(Next-Est.):8.945126e-09
+Tiempo final     :	  0d  1h  5m  5s
+T. Analisis      :	  0d  0h  3m  5s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  1h  5m  5s
+T. Analisis Est.:	  0d  0h  3m  4s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	8.666667e+00
+Pb:              	8.678639e-04
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :6.862745e-08	BERmin(Next-Est.):5.324331e-08
+Tiempo final     :	  0d  1h  8m  4s
+T. Analisis      :	  0d  0h  2m 59s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  1h  8m  4s
+T. Analisis Est.:	  0d  0h  2m 58s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	9.000000e+00
+Pb:              	5.677809e-04
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :9.803922e-08	BERmin(Next-Est.):9.803921e-09
+Tiempo final     :	  0d  1h 11m  1s
+T. Analisis      :	  0d  0h  2m 57s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  1h 11m  1s
+T. Analisis Est.:	  0d  0h  2m 56s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	9.333333e+00
+Pb:              	3.599394e-04
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :9.803921e-09	BERmin(Next-Est.):1.162121e-15
+Tiempo final     :	  0d  1h 13m 53s
+T. Analisis      :	  0d  0h  2m 52s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  1h 13m 53s
+T. Analisis Est.:	  0d  0h  2m 52s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	9.666666e+00
+Pb:              	2.205542e-04
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :9.803921e-09	BERmin(Next-Est.):9.803921e-10
+Tiempo final     :	  0d  1h 16m 39s
+T. Analisis      :	  0d  0h  2m 46s
+-----------------------------FIN------------------------------
+
+
+
+Tiempo de inicio:	  0d  1h 16m 39s
+T. Analisis Est.:	  0d  0h  2m 45s
+PACOTES ENVIADOS:	500000
+{Eb/N0}_db:      	9.999999e+00
+Pb:              	1.302806e-04
+BERminConfiable: 	9.803922e-07
+BERmin(Act.)     :1.290784e-04	BERmin(Next-Est.):1.290784e-05
+Tiempo final     :	  0d  1h 19m 24s
+T. Analisis      :	  0d  0h  2m 45s
+-----------------------------FIN------------------------------
+
